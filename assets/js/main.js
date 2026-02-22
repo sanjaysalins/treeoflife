@@ -177,4 +177,34 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
+  /**
+   * Health Wheel - Position items in a circle
+   */
+  function positionWheelItems() {
+    const container = document.querySelector('.wheel-container');
+    if (!container || container.offsetWidth === 0) return;
+    const items = container.querySelectorAll('.wheel-item');
+    const radius = container.offsetWidth / 2 - 55;
+    const cx = container.offsetWidth / 2;
+    const cy = container.offsetHeight / 2;
+    items.forEach((item, i) => {
+      const angle = (-90 + i * (360 / items.length)) * Math.PI / 180;
+      item.style.left = (cx + radius * Math.cos(angle) - 45) + 'px';
+      item.style.top = (cy + radius * Math.sin(angle) - 45) + 'px';
+    });
+  }
+  window.addEventListener('load', positionWheelItems);
+  window.addEventListener('resize', positionWheelItems);
+
+  /**
+   * Subject card collapse - sync aria-expanded for chevron CSS rotation
+   */
+  document.querySelectorAll('.subject-card-header[data-bs-toggle]').forEach(h => {
+    const t = document.querySelector(h.getAttribute('data-bs-target'));
+    if (t) {
+      t.addEventListener('show.bs.collapse', () => h.setAttribute('aria-expanded', 'true'));
+      t.addEventListener('hide.bs.collapse', () => h.setAttribute('aria-expanded', 'false'));
+    }
+  });
+
 })();
