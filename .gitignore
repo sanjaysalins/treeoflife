@@ -14,3 +14,4 @@ temp/
 
 # Environment files
 .env
+.playwright-mcp

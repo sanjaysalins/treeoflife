@@ -1027,6 +1027,19 @@ section,
 }
 
 /*--------------------------------------------------------------
+# Video Introduction Section
+--------------------------------------------------------------*/
+.video-intro h2 {
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+}
+
+.video-intro p {
+  color: var(--default-color);
+  margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
 .about {
