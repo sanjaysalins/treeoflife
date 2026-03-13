@@ -21,11 +21,13 @@ index.html                  # Main landing page (hero, health wheel, subject car
 service-details.html        # Service detail template page
 starter-page.html           # Blank starter template
 topics/
-  whole-foods.html          # Sample topic page
+  whole-foods.html          # Food & Nutrition topic page
+  daily-movement.html       # Exercise topic page — Scripture-based daily movement plan
+  walking.html              # Exercise topic page
 assets/
-  css/main.css              # All custom styles (~2,265 lines), CSS variables at top
+  css/main.css              # All custom styles (~2,278 lines), CSS variables at top
   js/main.js                # All custom JS (~210 lines)
-  img/                      # Images (favicon, hero, features, testimonials, clients)
+  img/                      # Images (logo, favicon, hero, features, about, services, tabs)
   vendor/                   # Third-party libraries (do not modify)
   scss/                     # SCSS placeholder (pro version only, not used)
 forms/
@@ -52,9 +54,11 @@ No build step required. Either:
 - Each card contains links to topic pages in `topics/`
 
 ### Topic Pages
-- Live in `topics/` directory (e.g., `topics/whole-foods.html`)
+- Live in `topics/` directory (e.g., `topics/whole-foods.html`, `topics/daily-movement.html`)
 - Use relative paths (`../assets/`) for shared CSS/JS/images
 - Follow the same header/footer structure as the main page
+- Left sidebar contains: category topic list (with current page marked `.active`), Biblical Perspective box, and Help/Contact box
+- Exercise category has 4 topics: Daily Movement, Strength Training, Flexibility, Walking
 
 ### Navigation
 - Fixed header with scroll state changes
@@ -83,9 +87,10 @@ To change the color scheme, update these variables.
 ## Adding New Content
 
 ### New topic page
-1. Copy `topics/whole-foods.html` as a template
+1. Copy an existing topic page as a template (`topics/whole-foods.html` for Food & Nutrition, `topics/walking.html` for Exercise)
 2. Update the content, title, and breadcrumb
 3. Link to it from the appropriate subject card in `index.html`
+4. Update the sidebar topic list in all pages within the same category
 
 ### New wellness pillar (subject card)
 1. Add a new card section in `index.html` following the existing pattern
