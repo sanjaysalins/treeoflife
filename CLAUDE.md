@@ -22,7 +22,7 @@ service-details.html        # Service detail template page
 starter-page.html           # Blank starter template
 topics/
   whole-foods.html          # Food & Nutrition topic page
-  daily-movement.html       # Exercise topic page — Scripture-based daily movement plan
+  resistance-training.html  # Exercise topic page — beginner 3-day push/pull resistance program
   walking.html              # Exercise topic page
 assets/
   css/main.css              # All custom styles (~2,278 lines), CSS variables at top
@@ -54,11 +54,11 @@ No build step required. Either:
 - Each card contains links to topic pages in `topics/`
 
 ### Topic Pages
-- Live in `topics/` directory (e.g., `topics/whole-foods.html`, `topics/daily-movement.html`)
+- Live in `topics/` directory (e.g., `topics/whole-foods.html`, `topics/resistance-training.html`)
 - Use relative paths (`../assets/`) for shared CSS/JS/images
 - Follow the same header/footer structure as the main page
 - Left sidebar contains: category topic list (with current page marked `.active`), Biblical Perspective box, and Help/Contact box
-- Exercise category has 4 topics: Daily Movement, Strength Training, Flexibility, Walking
+- Exercise category has 3 topics: Resistance Training, Walking, Mobility & Flexibility
 
 ### Navigation
 - Fixed header with scroll state changes
