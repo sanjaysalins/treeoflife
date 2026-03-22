@@ -36,6 +36,11 @@ forms/
   newsletter.php            # Newsletter subscription handler
 ```
 
+## Deployment
+
+- Pushing to `main` on GitHub auto-deploys to Netlify: https://treeoflife-org.netlify.app/
+- No build step — Netlify serves the static files directly
+
 ## Running Locally
 
 No build step required. Either:
