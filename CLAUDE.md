@@ -24,6 +24,7 @@ topics/
   whole-foods.html          # Food & Nutrition topic page
   resistance-training.html  # Exercise topic page — beginner 3-day push/pull resistance program
   walking.html              # Exercise topic page
+  sleep-hygiene.html        # Sleep & Rest topic page — circadian rhythm, sleep hygiene, and biblical rest
 assets/
   css/main.css              # All custom styles (~2,278 lines), CSS variables at top
   js/main.js                # All custom JS (~210 lines)
@@ -59,6 +60,7 @@ No build step required. Either:
 - Follow the same header/footer structure as the main page
 - Left sidebar contains: category topic list (with current page marked `.active`), Biblical Perspective box, and Help/Contact box
 - Exercise category has 3 topics: Resistance Training, Walking, Mobility & Flexibility
+- Sleep & Rest category has 4 topics: Sleep Hygiene & Circadian Rhythm, Sabbath Rest, Power of Napping, Digital Detox
 
 ### Navigation
 - Fixed header with scroll state changes
