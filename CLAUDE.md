@@ -27,7 +27,7 @@ topics/
   flexibility.html          # Exercise topic page — daily movement & worship plan (mobility, strength, Ruach)
   sleep-hygiene.html        # Sleep & Rest topic page — circadian rhythm, sleep hygiene, and biblical rest
 assets/
-  css/main.css              # All custom styles (~2,278 lines), CSS variables at top
+  css/main.css              # All custom styles (~2,360 lines), CSS variables at top
   js/main.js                # All custom JS (~210 lines)
   img/                      # Images (logo, favicon, hero, features, about, services, tabs)
   vendor/                   # Third-party libraries (do not modify)
@@ -59,6 +59,7 @@ No build step required. Either:
 - Collapsible sections (one per wellness pillar) using Bootstrap collapse
 - Chevron icons rotate based on `aria-expanded` state
 - Each card contains links to topic pages in `topics/`
+- Anchor IDs (e.g., `#exercise`) are on the `col-lg-6` wrapper divs, with `scroll-margin-top` to clear the sticky header
 
 ### Topic Pages
 - Live in `topics/` directory (e.g., `topics/whole-foods.html`, `topics/resistance-training.html`)
@@ -69,9 +70,11 @@ No build step required. Either:
 - Sleep & Rest category has 4 topics: Sleep Hygiene & Circadian Rhythm, Sabbath Rest, Power of Napping, Digital Detox
 
 ### Navigation
-- Fixed header with scroll state changes
+- Fixed header with scroll state changes (~100px tall)
 - Mobile hamburger toggle
 - Scrollspy for active link highlighting
+- `scroll-behavior: smooth` enabled globally; `scroll-margin-top` on sections (100px desktop, 66px mobile) and subject card anchors (120px desktop, 80px mobile) to offset the sticky header
+- Hash scroll correction on page load via JS `setTimeout` in `main.js` (lines 142-156)
 
 ## CSS Theming
 
@@ -82,6 +85,14 @@ Key CSS variables are defined at the top of `assets/css/main.css`:
 
 To change the color scheme, update these variables.
 
+### Custom CSS Components (added beyond template)
+- `.biblical-box` — styled quote box for Scripture references
+- `.tips-grid` / `.tip-card` — card grid for workout steps, tips, etc.
+- `.related-topics` — pill-style links at the bottom of topic pages
+- `.journal-section` / `.journal-field` / `.journal-line` — printable journal prompt with fill-in lines
+- `.btn-accent` — green accent button (used for Print Journal)
+- `@media print` — hides header/footer/nav, styles journal for clean printing
+
 ## Conventions
 
 - **No build tools** — edit HTML/CSS/JS files directly
@@ -89,16 +100,17 @@ To change the color scheme, update these variables.
 - **BEM-like naming** for custom components (e.g., `subject-card`, `subject-card-header`)
 - **Bootstrap utilities** used throughout for spacing, layout, visibility
 - **Mobile-first** responsive approach
-- New topic pages go in `topics/` and follow the structure of `whole-foods.html`
+- New topic pages go in `topics/` and follow the structure of existing pages in the same category (e.g., `walking.html` for Exercise)
 - Images use WebP where possible for optimization
 
 ## Adding New Content
 
 ### New topic page
 1. Copy an existing topic page as a template (`topics/whole-foods.html` for Food & Nutrition, `topics/walking.html` for Exercise)
-2. Update the content, title, and breadcrumb
+2. Update the content, title, meta description/keywords, and breadcrumb
 3. Link to it from the appropriate subject card in `index.html`
-4. Update the sidebar topic list in all pages within the same category
+4. Update the sidebar topic list in **all** pages within the same category (each page has a sidebar listing all sibling topics)
+5. Add to the Related Topics section at the bottom of sibling pages
 
 ### New wellness pillar (subject card)
 1. Add a new card section in `index.html` following the existing pattern
