@@ -24,6 +24,7 @@ topics/
   whole-foods.html          # Food & Nutrition topic page
   resistance-training.html  # Exercise topic page — beginner 3-day push/pull resistance program
   walking.html              # Exercise topic page
+  flexibility.html          # Exercise topic page — daily movement & worship plan (mobility, strength, Ruach)
   sleep-hygiene.html        # Sleep & Rest topic page — circadian rhythm, sleep hygiene, and biblical rest
 assets/
   css/main.css              # All custom styles (~2,278 lines), CSS variables at top
