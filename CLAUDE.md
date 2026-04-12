@@ -23,6 +23,7 @@ starter-page.html           # Blank starter template
 topics/
   whole-foods.html          # Food & Nutrition topic page
   biblical-core-eating.html # Food & Nutrition topic page — four biblical eating patterns and the biblical plate
+  fasting-detox.html        # Food & Nutrition topic page — fasting zones, bodily detox, and medical disclaimer
   resistance-training.html  # Exercise topic page — beginner 3-day push/pull resistance program
   walking.html              # Exercise topic page
   flexibility.html          # Exercise topic page — daily movement & worship plan (mobility, strength, Ruach)
@@ -30,7 +31,7 @@ topics/
   digital-detox.html        # Sleep & Rest topic page — screen-free bedtime and tech-free sleep sanctuary
   power-of-napping.html     # Sleep & Rest topic page — power nap benefits, cautions, and how-to guide
 assets/
-  css/main.css              # All custom styles (~2,370 lines), CSS variables at top
+  css/main.css              # All custom styles (~2,460 lines), CSS variables at top
   js/main.js                # All custom JS (~210 lines)
   img/                      # Images (logo, favicon, hero, features, about, services, tabs)
   vendor/                   # Third-party libraries (do not modify)
@@ -69,9 +70,9 @@ No build step required. Either:
 - Use relative paths (`../assets/`) for shared CSS/JS/images
 - Follow the same header/footer structure as the main page
 - Left sidebar contains: category topic list (with current page marked `.active`), Biblical Perspective box, and Help/Contact box
-- **Only 8 topic pages exist so far** — `index.html` links to ~36 topic pages across all 8 pillars, but most are not yet created (links will 404)
+- **Only 9 topic pages exist so far** — `index.html` links to ~36 topic pages across all 8 pillars, but most are not yet created (links will 404)
 - Existing topic pages:
-  - Food & Nutrition: Whole Foods, Biblical Core Eating (2 of 5 — Hydration, Mindful Eating, Fasting & Detox not yet created)
+  - Food & Nutrition: Whole Foods, Biblical Core Eating, Fasting & Detox (3 of 5 — Hydration, Mindful Eating not yet created)
   - Exercise: Resistance Training, Walking, Mobility & Flexibility (3 pages)
   - Sleep & Rest: Sleep Hygiene & Circadian Rhythm, Digital Detox, Power of Napping (3 of 4 planned — Sabbath Rest is linked but not yet created)
 
@@ -96,6 +97,8 @@ To change the color scheme, update these variables.
 - `.tips-grid` / `.tip-card` — card grid for workout steps, tips, etc.
 - `.related-topics` — pill-style links at the bottom of topic pages
 - `.journal-section` / `.journal-field` / `.journal-line` — printable journal prompt with fill-in lines
+- `.fasting-zones` / `.fasting-zone` — zone-based cards with coloured left borders (`.zone-green`, `.zone-amber`, `.zone-red`)
+- `.fasting-disclaimer` — red-tinted medical disclaimer box
 - `.btn-accent` — green accent button (used for Print Journal)
 - `@media print` — hides header/footer/nav, styles journal for clean printing
 

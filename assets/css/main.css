@@ -2289,6 +2289,98 @@ section,
 }
 
 /*--------------------------------------------------------------
+# Fasting Zone Cards
+--------------------------------------------------------------*/
+.fasting-zones {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 25px 0;
+}
+
+.fasting-zone {
+  background: var(--surface-color);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  border-radius: 10px;
+  padding: 20px;
+  border-left: 5px solid #ccc;
+}
+
+.fasting-zone.zone-green {
+  border-left-color: #28a745;
+}
+
+.fasting-zone.zone-amber {
+  border-left-color: #fd7e14;
+}
+
+.fasting-zone.zone-red {
+  border-left-color: #dc3545;
+}
+
+.fasting-zone-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.fasting-zone-header .zone-icons {
+  display: flex;
+  gap: 6px;
+  font-size: 20px;
+}
+
+.fasting-zone.zone-green .zone-icons {
+  color: #28a745;
+}
+
+.fasting-zone.zone-amber .zone-icons {
+  color: #fd7e14;
+}
+
+.fasting-zone.zone-red .zone-icons {
+  color: #dc3545;
+}
+
+.fasting-zone-header h5 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.fasting-zone-body {
+  font-size: 14px;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+}
+
+.fasting-zone-body dt {
+  font-weight: 600;
+  color: var(--heading-color);
+  margin-top: 8px;
+}
+
+.fasting-zone-body dd {
+  margin-left: 0;
+  margin-bottom: 4px;
+}
+
+.fasting-disclaimer {
+  background: color-mix(in srgb, #dc3545, transparent 92%);
+  border: 1px solid color-mix(in srgb, #dc3545, transparent 70%);
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin: 25px 0;
+  font-size: 13px;
+  color: color-mix(in srgb, var(--default-color), transparent 10%);
+}
+
+.fasting-disclaimer i {
+  color: #dc3545;
+  margin-right: 6px;
+}
+
+/*--------------------------------------------------------------
 # Journal Section (Printable)
 --------------------------------------------------------------*/
 .journal-section {
