@@ -9,10 +9,10 @@ Built on the BootstrapMade "QuickStart" template, customized with a nature-inspi
 ## Tech Stack
 
 - **HTML5** — semantic markup, no frontend framework
-- **CSS3** — custom properties for theming, Bootstrap 5.3.3 grid/components
+- **CSS3** — custom properties for theming, Bootstrap 5.3.8 grid/components
 - **Vanilla JavaScript** — no build tools, no npm/yarn
 - **PHP** — basic contact and newsletter form handlers (require a PHP server)
-- **Vendor libraries** (all vendored in `assets/vendor/`): Bootstrap 5.3.3, Bootstrap Icons, AOS (scroll animations), GLightbox, Swiper (carousels), PHP Email Form
+- **Vendor libraries** (all vendored in `assets/vendor/`): Bootstrap 5.3.8, Bootstrap Icons, AOS (scroll animations), GLightbox, Swiper (carousels), PHP Email Form
 
 ## Project Structure
 
@@ -27,7 +27,7 @@ topics/
   flexibility.html          # Exercise topic page — daily movement & worship plan (mobility, strength, Ruach)
   sleep-hygiene.html        # Sleep & Rest topic page — circadian rhythm, sleep hygiene, and biblical rest
 assets/
-  css/main.css              # All custom styles (~2,360 lines), CSS variables at top
+  css/main.css              # All custom styles (~2,370 lines), CSS variables at top
   js/main.js                # All custom JS (~210 lines)
   img/                      # Images (logo, favicon, hero, features, about, services, tabs)
   vendor/                   # Third-party libraries (do not modify)
@@ -66,8 +66,11 @@ No build step required. Either:
 - Use relative paths (`../assets/`) for shared CSS/JS/images
 - Follow the same header/footer structure as the main page
 - Left sidebar contains: category topic list (with current page marked `.active`), Biblical Perspective box, and Help/Contact box
-- Exercise category has 3 topics: Resistance Training, Walking, Mobility & Flexibility
-- Sleep & Rest category has 4 topics: Sleep Hygiene & Circadian Rhythm, Sabbath Rest, Power of Napping, Digital Detox
+- **Only 5 topic pages exist so far** — `index.html` links to ~36 topic pages across all 8 pillars, but most are not yet created (links will 404)
+- Existing topic pages:
+  - Food & Nutrition: Whole Foods (whole-foods.html)
+  - Exercise: Resistance Training, Walking, Mobility & Flexibility (3 pages)
+  - Sleep & Rest: Sleep Hygiene & Circadian Rhythm (1 of 4 planned — Sabbath Rest, Power of Napping, Digital Detox are linked but not yet created)
 
 ### Navigation
 - Fixed header with scroll state changes (~100px tall)
