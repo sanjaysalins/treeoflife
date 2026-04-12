@@ -26,6 +26,7 @@ topics/
   walking.html              # Exercise topic page
   flexibility.html          # Exercise topic page — daily movement & worship plan (mobility, strength, Ruach)
   sleep-hygiene.html        # Sleep & Rest topic page — circadian rhythm, sleep hygiene, and biblical rest
+  digital-detox.html        # Sleep & Rest topic page — screen-free bedtime and tech-free sleep sanctuary
 assets/
   css/main.css              # All custom styles (~2,370 lines), CSS variables at top
   js/main.js                # All custom JS (~210 lines)
@@ -70,7 +71,7 @@ No build step required. Either:
 - Existing topic pages:
   - Food & Nutrition: Whole Foods (whole-foods.html)
   - Exercise: Resistance Training, Walking, Mobility & Flexibility (3 pages)
-  - Sleep & Rest: Sleep Hygiene & Circadian Rhythm (1 of 4 planned — Sabbath Rest, Power of Napping, Digital Detox are linked but not yet created)
+  - Sleep & Rest: Sleep Hygiene & Circadian Rhythm, Digital Detox (2 of 4 planned — Sabbath Rest, Power of Napping are linked but not yet created)
 
 ### Navigation
 - Fixed header with scroll state changes (~100px tall)
