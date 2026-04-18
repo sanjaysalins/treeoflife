@@ -30,6 +30,7 @@ topics/
   sleep-hygiene.html        # Sleep & Rest topic page — circadian rhythm, sleep hygiene, and biblical rest
   digital-detox.html        # Sleep & Rest topic page — screen-free bedtime and tech-free sleep sanctuary
   power-of-napping.html     # Sleep & Rest topic page — power nap benefits, cautions, and how-to guide
+  stress-management.html    # Mental Health topic page — holistic stress management, mindful breathing, video placeholders
 assets/
   css/main.css              # All custom styles (~2,460 lines), CSS variables at top
   js/main.js                # All custom JS (~210 lines)
@@ -70,11 +71,12 @@ No build step required. Either:
 - Use relative paths (`../assets/`) for shared CSS/JS/images
 - Follow the same header/footer structure as the main page
 - Left sidebar contains: category topic list (with current page marked `.active`), Biblical Perspective box, and Help/Contact box
-- **Only 9 topic pages exist so far** — `index.html` links to ~36 topic pages across all 8 pillars, but most are not yet created (links will 404)
+- **Only 10 topic pages exist so far** — `index.html` links to ~36 topic pages across all 8 pillars, but most are not yet created (links will 404)
 - Existing topic pages:
   - Food & Nutrition: Whole Foods, Biblical Core Eating, Fasting & Detox (3 of 5 — Hydration, Mindful Eating not yet created)
   - Exercise: Resistance Training, Walking, Mobility & Flexibility (3 pages)
   - Sleep & Rest: Sleep Hygiene & Circadian Rhythm, Digital Detox, Power of Napping (3 of 4 planned — Sabbath Rest is linked but not yet created)
+  - Mental Health: Stress Management (1 of 5 — Meditation & Prayer, Emotional Resilience, Gratitude Practice, Cognitive Health not yet created)
 
 ### Navigation
 - Fixed header with scroll state changes (~100px tall)
@@ -111,6 +113,7 @@ To change the color scheme, update these variables.
 - **Mobile-first** responsive approach
 - New topic pages go in `topics/` and follow the structure of existing pages in the same category (e.g., `walking.html` for Exercise)
 - Images use WebP where possible for optimization
+- **Clean up screenshots** — after every Playwright browser verification (manual or automated), always delete all PNG/JPEG screenshots generated in the project root before finishing the task. Never leave screenshot files behind.
 
 ## Adding New Content
 

@@ -2381,6 +2381,19 @@ section,
 }
 
 /*--------------------------------------------------------------
+# Video Placeholder
+--------------------------------------------------------------*/
+.video-placeholder {
+  background: #f0f0f0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  aspect-ratio: 16 / 9;
+}
+
+/*--------------------------------------------------------------
 # Journal Section (Printable)
 --------------------------------------------------------------*/
 .journal-section {
