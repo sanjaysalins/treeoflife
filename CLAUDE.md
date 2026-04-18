@@ -32,7 +32,7 @@ topics/
   power-of-napping.html     # Sleep & Rest topic page — power nap benefits, cautions, and how-to guide
   stress-management.html    # Mental Health topic page — holistic stress management, mindful breathing, video placeholders
 assets/
-  css/main.css              # All custom styles (~2,460 lines), CSS variables at top
+  css/main.css              # All custom styles (~2,475 lines), CSS variables at top
   js/main.js                # All custom JS (~210 lines)
   img/                      # Images (logo, favicon, hero, features, about, services, tabs)
   vendor/                   # Third-party libraries (do not modify)
@@ -101,6 +101,7 @@ To change the color scheme, update these variables.
 - `.journal-section` / `.journal-field` / `.journal-line` — printable journal prompt with fill-in lines
 - `.fasting-zones` / `.fasting-zone` — zone-based cards with coloured left borders (`.zone-green`, `.zone-amber`, `.zone-red`)
 - `.fasting-disclaimer` — red-tinted medical disclaimer box
+- `.video-placeholder` — grey 16:9 placeholder box for upcoming video embeds (replace with `<div class="ratio ratio-16x9"><iframe ...></div>`)
 - `.btn-accent` — green accent button (used for Print Journal)
 - `@media print` — hides header/footer/nav, styles journal for clean printing
 
@@ -113,12 +114,13 @@ To change the color scheme, update these variables.
 - **Mobile-first** responsive approach
 - New topic pages go in `topics/` and follow the structure of existing pages in the same category (e.g., `walking.html` for Exercise)
 - Images use WebP where possible for optimization
+- **Browser verification** — use `python3 -m http.server 8000` (not `file://`) for Playwright testing since `file://` protocol is blocked
 - **Clean up screenshots** — after every Playwright browser verification (manual or automated), always delete all PNG/JPEG screenshots generated in the project root before finishing the task. Never leave screenshot files behind.
 
 ## Adding New Content
 
 ### New topic page
-1. Copy an existing topic page as a template (`topics/whole-foods.html` for Food & Nutrition, `topics/walking.html` for Exercise)
+1. Copy an existing topic page as a template (`topics/whole-foods.html` for Food & Nutrition, `topics/walking.html` for Exercise, `topics/stress-management.html` for Mental Health)
 2. Update the content, title, meta description/keywords, and breadcrumb
 3. Link to it from the appropriate subject card in `index.html`
 4. Update the sidebar topic list in **all** pages within the same category (each page has a sidebar listing all sibling topics)
