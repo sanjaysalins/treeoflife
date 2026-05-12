@@ -128,66 +128,71 @@ This file tracks every brief from Jonathan (the client) and verifies each delive
 ## 2026-04-16 — Clean Living Spaces (new brief, NOT YET IMPLEMENTED)
 
 **Source:** Jonathan Verrinder, email "Clean living spaces", 16 Apr 2026 5:44 PM
-**Pillar:** Environment (this would be the **first** Environment topic page)
-**Target page:** `topics/clean-living-spaces.html` *(does not yet exist — already linked from `index.html:421`)*
-**Implementation commit:** _pending_
+**Pillar:** Environment (this is the **first** Environment topic page)
+**Target page:** `topics/clean-living-spaces.html`
+**Implementation commit:** _pending push_ (this session)
 
 ### Core sections from brief
 
-| # | Deliverable from brief | Status | Notes |
+| # | Deliverable from brief | Status | Evidence |
 |---|---|---|---|
-| 1 | Opening: clean living spaces support holistic health (stress↓, focus↑, sleep, easier routines, fewer allergens/respiratory irritants) | ⬜ | intro paragraph |
-| 2 | **Mental and emotional health** — tidy → less overwhelm, more control, less anxiety, better mood, fewer visual distractions, better concentration | ⬜ | section |
-| 3 | **Physical health** — indoor air quality, dust/allergens/harsh chemicals, asthma/headaches/allergies | ⬜ | section |
-| 4 | **Sleep and recovery** — cleaner bedroom → better rest, deeper sleep → recovery, mood, daytime energy | ⬜ | section |
-| 5 | **Healthy habits** — organised spaces → easier cooking/exercise/routines, fewer barriers to action | ⬜ | section |
+| 1 | Opening: clean living spaces support holistic health (stress↓, focus↑, sleep, easier routines, fewer allergens/respiratory irritants) | ✅ | `topics/clean-living-spaces.html:123` |
+| 2 | **Mental and emotional health** — tidy → less overwhelm, more control, less anxiety, better mood, fewer visual distractions, better concentration | ✅ | tip card, `topics/clean-living-spaces.html:131-134` |
+| 3 | **Physical health** — indoor air quality, dust/allergens/harsh chemicals, asthma/headaches/allergies | ✅ | tip card, `topics/clean-living-spaces.html:135-138` |
+| 4 | **Sleep and recovery** — cleaner bedroom → better rest, deeper sleep → recovery, mood, daytime energy | ✅ | tip card, `topics/clean-living-spaces.html:139-142` |
+| 5 | **Healthy habits** — organised spaces → easier cooking/exercise/routines, fewer barriers to action | ✅ | tip card, `topics/clean-living-spaces.html:143-146` |
 
-### Five themed sub-areas (listed in the brief)
+### Five themed sub-areas (covered at light level on this page)
 
-These are mentioned as themes to cover. Could be **sections on this page** OR **stubs for future Environment topic pages**. See open question below.
+Default applied: treat as sections on this cornerstone page, not separate pages. Deeper coverage can move to dedicated Environment topics (Toxin-Free Living, Gardening, etc.) later.
 
-| # | Theme | Notes from brief |
-|---|---|---|
-| 6 | Home hygiene | cleaning routines, sanitation, non-toxic products, airflow, decluttering |
-| 7 | Biblical encouragement | short devotionals tied to verses about cleanliness, order, stewardship |
-| 8 | Holistic wellness | how clean spaces support stress reduction, rest, spiritual focus |
-| 9 | Family practices | simple household rhythms, shared chores, hospitality |
-| 10 | Seasonal reset | spring cleaning, Sabbath prep, prayerful decluttering |
+| # | Theme | Status | Evidence |
+|---|---|---|---|
+| 6 | Home hygiene — cleaning routines, sanitation, non-toxic products, airflow, decluttering | ✅ | tip card, `topics/clean-living-spaces.html:152-155` |
+| 7 | Biblical encouragement — devotionals tied to cleanliness, order, stewardship | ✅ | tip card, `topics/clean-living-spaces.html:156-159` |
+| 8 | Holistic wellness — how clean spaces support stress reduction, rest, spiritual focus | ✅ | tip card, `topics/clean-living-spaces.html:160-163` |
+| 9 | Family practices — household rhythms, shared chores, hospitality | ✅ | tip card, `topics/clean-living-spaces.html:164-167` |
+| 10 | Seasonal reset — spring cleaning, Sabbath prep, prayerful decluttering | ✅ | tip card, `topics/clean-living-spaces.html:168-171` |
 
 ### Biblical View of the Home (section)
 
-| # | Deliverable from brief | Status | Notes |
+| # | Deliverable from brief | Status | Evidence |
 |---|---|---|---|
-| 11 | Home-as-sanctuary framing: peace, order, prayer, welcome to God's presence | ⬜ | likely a `.biblical-box`-style intro |
-| 12 | Cleaning reframed as **stewardship**, not housekeeping | ⬜ | section |
-| 13 | Practical house-sanctuary ideas — 6 bullets (see below) | ⬜ | candidate for `.tips-grid` / `.tip-card` |
-| 13a | Keep surfaces clear and rooms tidy | ⬜ | tip card |
-| 13b | Place Scripture / faith-based art in visible spots | ⬜ | tip card |
-| 13c | Create a quiet prayer corner with Bible, journal, chair | ⬜ | tip card |
-| 13d | Use gentle routines for cleaning and resetting the home | ⬜ | tip card |
-| 13e | Each room serves a biblical-values purpose (rest, fellowship, cleansing, hospitality) | ⬜ | tip card |
-| 13f | Clean regularly as stewardship and gratitude, not chore | ⬜ | tip card |
-| 14 | Closing narrative: not about perfection; atmosphere of love/peace/joy, welcoming family and guests, everyday routines shaped by faith | ⬜ | closing paragraphs |
+| 11 | Home-as-sanctuary framing: peace, order, prayer, welcome to God's presence | ✅ | intro `topics/clean-living-spaces.html:125-127` + section intro 175-177 |
+| 12 | Cleaning reframed as **stewardship**, not housekeeping | ✅ | `topics/clean-living-spaces.html:178-180` |
+| 13 | Practical house-sanctuary ideas — 6 cards | ✅ | tips-grid, `topics/clean-living-spaces.html:188-213` |
+| 13a | Keep surfaces clear and rooms tidy | ✅ | tip card, `topics/clean-living-spaces.html:189-192` |
+| 13b | Place Scripture / faith-based art in visible spots | ✅ | tip card, `topics/clean-living-spaces.html:193-196` |
+| 13c | Create a quiet prayer corner with Bible, journal, chair | ✅ | tip card, `topics/clean-living-spaces.html:197-200` |
+| 13d | Use gentle routines for cleaning and resetting the home | ✅ | tip card, `topics/clean-living-spaces.html:201-204` |
+| 13e | Each room serves a biblical-values purpose (rest, fellowship, cleansing, hospitality) | ✅ | tip card, `topics/clean-living-spaces.html:205-208` |
+| 13f | Clean regularly as stewardship and gratitude, not chore | ✅ | tip card, `topics/clean-living-spaces.html:209-212` |
+| 14 | Closing narrative: not about perfection; atmosphere of love/peace/joy, welcoming family and guests, everyday routines shaped by faith | ✅ | `topics/clean-living-spaces.html:215-217` |
 
-### Outstanding questions for client (raise with first draft)
+### Defaults applied — 🟡 PLEASE CONFIRM with client on return
 
-- ❓ Which **Scripture verses** does Jonathan want quoted? Brief mentions themes (cleanliness, order, stewardship) but cites none. Candidates I'd default to: **1 Cor 14:40** ("everything should be done in a fitting and orderly way"), **Prov 24:3-4** ("by wisdom a house is built…"), **Heb 13:2** (hospitality), **Joshua 24:15** ("as for me and my house we will serve the Lord").
-- ❓ Are the **5 themed sub-areas** (home hygiene / biblical encouragement / holistic wellness / family practices / seasonal reset) all sections on this **one** page, or do some belong as **separate future topic pages** under Environment? The Environment pillar already has 4 other topics planned (Nature Therapy, Toxin-Free Living, Sustainable Health, Gardening) — there may be overlap (e.g., "non-toxic products" → Toxin-Free Living).
-- ❓ **Video** on this page (à la Stress Management) or text-only?
-- ❓ Confirm **page slug**: `clean-living-spaces.html` matches the existing dead link in `index.html:421` — proceed with that.
-- ❓ Tone of the **practical sanctuary ideas** — 6 tip-cards (like Sleep Hygiene's "How to take a healthy power nap"), or a more visual layout?
+| Decision | Applied default | Where |
+|---|---|---|
+| 🟡 **Scripture references** | Sidebar: 1 Cor 14:40; mid-page: Josh 24:15; inline mention: Heb 13:2 (hospitality) | sidebar `:108`, mid-page `:183-184`, inline `:216` |
+| 🟡 **Five themed sub-areas scope** | All five covered as light-level sections on this cornerstone page; deeper dives left for future Environment topics | section "Five Areas to Care For" `:149-172` |
+| 🟡 **No video** | Page is text-only; no video section included | n/a |
+| 🟡 **Practical ideas layout** | 6 tip-cards in `.tips-grid`, matching Power of Napping pattern | `:188-213` |
+| 🟡 **Page slug** | `clean-living-spaces.html` — matches existing dead link in `index.html:421` | filename |
 
-### Defaults Claude will apply if not blocked
+### Outstanding questions for client (now narrowed)
 
-Per Sanjay's standing direction (client is slow to reply, don't block):
+All applied defaults above are flagged 🟡. The only true outstanding items are:
 
-- **Slug:** `clean-living-spaces.html` (matches existing sidebar link).
-- **Scope:** treat this as a single cornerstone Environment page; cover all 5 themed sub-areas on this page at a light level. Future pages (Toxin-Free Living, Gardening, etc.) can take the deeper dive.
-- **Scripture:** lead biblical-box with **1 Cor 14:40**; supporting refs (Heb 13:2, Josh 24:15) inline. Flag clearly so Jon can swap.
-- **No video** unless he sends assets.
-- **Practical sanctuary ideas** → `.tips-grid` of 6 cards, same pattern as Power of Napping's "How to Take a Healthy Power Nap".
+- ❓ Confirm or replace any of the **5 Scripture defaults** (1 Cor 14:40 / Josh 24:15 / Heb 13:2 / Prov 24:3-4 / 1 Pet 5:7-style additions).
+- ❓ Confirm scope decision — happy with one cornerstone page covering all 5 themes lightly, or should some themes (e.g., Family practices, Seasonal reset) split into their own future pages?
+- ❓ Want a **video** added later when assets are available?
 
-All defaults will be marked in the page's commit message and re-flagged here as 🟡 with "assumed — please confirm" so Jon can override on return.
+### Verification performed
+
+- Local server: `python3 -m http.server 8000`
+- Playwright DOM check at **1280 × 800**: title, H1, breadcrumb, 5 sidebar links with correct active, 2 biblical boxes (1 Cor 14:40 + Josh 24:15), 3 tips-grids (4 + 5 + 6 = 15 tip-cards total), 4 main section headings, 4 related-topics pills, help box present
+- Playwright at **390 × 844** (mobile): no horizontal overflow, all 15 tip-cards uniform width 351 px (stacked correctly)
+- Live URL verification pending Sanjay's push
 
 Ran when Sanjay requested "independent verification of all the work you do for this client". Audits every shipped page against the verification workflow defined in `CLAUDE.md` → "Client Brief Verification".
 

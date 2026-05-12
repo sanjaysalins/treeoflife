@@ -31,6 +31,7 @@ topics/
   digital-detox.html        # Sleep & Rest topic page — screen-free bedtime and tech-free sleep sanctuary
   power-of-napping.html     # Sleep & Rest topic page — power nap benefits, cautions, and how-to guide
   stress-management.html    # Mental Health topic page — holistic stress management, embedded box & 3-7-8 breathing videos
+  clean-living-spaces.html  # Environment topic page (first in pillar) — home as sanctuary, holistic benefits, 5 themed areas, stewardship, 6 practical tip-cards
 CLIENT_BRIEFS.md            # Per-email brief tracker: deliverables → status → evidence (see "Client Brief Verification")
 assets/
   css/main.css              # All custom styles (~2,475 lines), CSS variables at top
@@ -78,6 +79,7 @@ No build step required. Either:
   - Exercise: Resistance Training, Walking, Mobility & Flexibility (3 pages)
   - Sleep & Rest: Sleep Hygiene & Circadian Rhythm, Digital Detox, Power of Napping (3 of 4 planned — Sabbath Rest is linked but not yet created)
   - Mental Health: Stress Management (1 of 5 — Meditation & Prayer, Emotional Resilience, Gratitude Practice, Cognitive Health not yet created)
+  - Environment: Clean Living Spaces (1 of 5 — Nature Therapy, Toxin-Free Living, Sustainable Health, Gardening not yet created)
 
 ### Navigation
 - Fixed header with scroll state changes (~100px tall)
