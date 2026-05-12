@@ -171,22 +171,22 @@ These slugs are referenced from existing pages' sidebars / Related Topics / `ind
 
 ### D. Pages shipped without a brief on file in this log
 
-The Client Brief Verification workflow was set up on 2026-05-12. Eight pages were built **before** that date and have no corresponding email logged in this file. They are live and structurally healthy, but their content has never been independently verified against the original client brief because we don't have the brief.
+The Client Brief Verification workflow was set up on 2026-05-12. Eight pages were built **before** that date and have no corresponding email logged in this file.
 
-| Page | Live | Brief logged? |
-|---|---|---|
-| `whole-foods.html` | ✅ | ⬜ — original Jonathan email needed |
-| `biblical-core-eating.html` | ✅ | ⬜ |
-| `fasting-detox.html` | ✅ | ⬜ |
-| `resistance-training.html` | ✅ | ⬜ |
-| `walking.html` | ✅ | ⬜ |
-| `flexibility.html` | ✅ | ⬜ |
-| `sleep-hygiene.html` | ✅ | ⬜ |
-| `digital-detox.html` | ✅ | ⬜ |
-| `power-of-napping.html` | ✅ | ✅ Apr 7 (backfilled 2026-05-12) |
-| `stress-management.html` | ✅ | ✅ Apr 9 (script) + Apr 9 (videos) |
+**Decision (2026-05-12, Sanjay):** these pages are **out of scope** for the verification workflow — do not flag them as gaps in future sweeps. Workflow applies from 2026-05-12 onward only.
 
-**Action for Sanjay:** if you want to bring all pages under the verification workflow, forward the original Jonathan emails for the 8 pages above and I'll backfill them in the same format as Apr 7 Power Napping.
+| Page | Status |
+|---|---|
+| `whole-foods.html` | Pre-workflow — out of scope |
+| `biblical-core-eating.html` | Pre-workflow — out of scope |
+| `fasting-detox.html` | Pre-workflow — out of scope |
+| `resistance-training.html` | Pre-workflow — out of scope |
+| `walking.html` | Pre-workflow — out of scope |
+| `flexibility.html` | Pre-workflow — out of scope |
+| `sleep-hygiene.html` | Pre-workflow — out of scope |
+| `digital-detox.html` | Pre-workflow — out of scope |
+| `power-of-napping.html` | ✅ Apr 7 brief backfilled |
+| `stress-management.html` | ✅ Apr 9 brief logged (script + videos) |
 
 ### E. Line-number drift check on logged briefs
 
@@ -196,6 +196,6 @@ Re-verified every `file:line` reference in this file against the current source.
 
 - **Live deploy:** 10/10 pages healthy, 0 broken
 - **Structural integrity:** 10/10 pages pass all DOM checks
-- **Brief coverage:** 2/10 pages have full briefs logged; 8/10 missing their source email
+- **Brief coverage:** 2/10 pages logged; 8/10 pre-date the workflow and are out of scope (per Sanjay 2026-05-12)
 - **Open client questions:** 6 across Stress Management (2) and Gratitude (5) — see entries above; client cadence is slow, do not block on them
 
