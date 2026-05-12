@@ -130,7 +130,7 @@ This file tracks every brief from Jonathan (the client) and verifies each delive
 **Source:** Jonathan Verrinder, email "Clean living spaces", 16 Apr 2026 5:44 PM
 **Pillar:** Environment (this is the **first** Environment topic page)
 **Target page:** `topics/clean-living-spaces.html`
-**Implementation commit:** _pending push_ (this session)
+**Implementation commit:** `0f7bee2` (deployed to Netlify 2026-05-12, 1s deploy)
 
 ### Core sections from brief
 
@@ -189,10 +189,8 @@ All applied defaults above are flagged 🟡. The only true outstanding items are
 
 ### Verification performed
 
-- Local server: `python3 -m http.server 8000`
-- Playwright DOM check at **1280 × 800**: title, H1, breadcrumb, 5 sidebar links with correct active, 2 biblical boxes (1 Cor 14:40 + Josh 24:15), 3 tips-grids (4 + 5 + 6 = 15 tip-cards total), 4 main section headings, 4 related-topics pills, help box present
-- Playwright at **390 × 844** (mobile): no horizontal overflow, all 15 tip-cards uniform width 351 px (stacked correctly)
-- Live URL verification pending Sanjay's push
+- **Local** (`python3 -m http.server 8000`): Playwright DOM check at 1280 × 800 — title, H1, breadcrumb, 5 sidebar links with correct active, 2 biblical boxes (1 Cor 14:40 + Josh 24:15), 3 tips-grids (4 + 5 + 6 = 15 tip-cards), 4 section headings, 4 related-topics, help box present. Mobile at 390 × 844 — no horizontal overflow, all 15 tip-cards uniform 351px (stacked).
+- **Live** (https://treeoflife-org.netlify.app/topics/clean-living-spaces.html): deployed in 1s. Playwright re-ran all desktop + mobile DOM checks against the live URL — every assertion matched the local run. ✅
 
 Ran when Sanjay requested "independent verification of all the work you do for this client". Audits every shipped page against the verification workflow defined in `CLAUDE.md` → "Client Brief Verification".
 
