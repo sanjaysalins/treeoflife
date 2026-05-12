@@ -24,6 +24,7 @@ topics/
   whole-foods.html          # Food & Nutrition topic page
   biblical-core-eating.html # Food & Nutrition topic page — four biblical eating patterns and the biblical plate
   fasting-detox.html        # Food & Nutrition topic page — fasting zones, bodily detox, and medical disclaimer
+  hydration.html            # Food & Nutrition topic page — water, electrolytes, hydration by age, 12 hydrating foods (Ps 42:1-2 / John 7:38)
   resistance-training.html  # Exercise topic page — beginner 3-day push/pull resistance program
   walking.html              # Exercise topic page
   flexibility.html          # Exercise topic page — daily movement & worship plan (mobility, strength, Ruach)
@@ -75,7 +76,7 @@ No build step required. Either:
 - Left sidebar contains: category topic list (with current page marked `.active`), Biblical Perspective box, and Help/Contact box
 - **Only 10 topic pages exist so far** — `index.html` links to ~36 topic pages across all 8 pillars, but most are not yet created (links will 404)
 - Existing topic pages:
-  - Food & Nutrition: Whole Foods, Biblical Core Eating, Fasting & Detox (3 of 5 — Hydration, Mindful Eating not yet created)
+  - Food & Nutrition: Whole Foods, Biblical Core Eating, Fasting & Detox, Hydration (4 of 5 — Mindful Eating not yet created)
   - Exercise: Resistance Training, Walking, Mobility & Flexibility (3 pages)
   - Sleep & Rest: Sleep Hygiene & Circadian Rhythm, Digital Detox, Power of Napping (3 of 4 planned — Sabbath Rest is linked but not yet created)
   - Mental Health: Stress Management (1 of 5 — Meditation & Prayer, Emotional Resilience, Gratitude Practice, Cognitive Health not yet created)

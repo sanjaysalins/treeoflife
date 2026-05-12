@@ -198,43 +198,45 @@ All applied defaults above are flagged 🟡. The only true outstanding items are
 
 **Source:** Jonathan Verrinder, email "hydration", 26 Apr 2026 1:06 PM
 **Pillar:** Food & Nutrition
-**Target page:** `topics/hydration.html` *(does not yet exist — already linked from `index.html:276`)*
-**Implementation commit:** _pending_
+**Target page:** `topics/hydration.html`
+**Implementation commit:** _pending push_ (this session)
 
 ### Core sections from brief
 
-| # | Deliverable from brief | Status | Notes |
+| # | Deliverable from brief | Status | Evidence |
 |---|---|---|---|
-| 1 | **Hydration overview** — what hydration is (replacing water lost via breathing, sweating, urination, digestion); mild dehydration affects energy, concentration, digestion, temperature control; drink regularly throughout the day; increase when hot, exercising, or unwell | ⬜ | intro section + section content |
-| 2 | **Water and electrolytes** — water as the default for everyday hydration (healthy, cheap, effective); sodium / potassium / magnesium regulate fluid balance, muscle contraction, nerve function; matter more when fluid loss is high (sweat, diarrhea, vomiting, prolonged exercise); for most people water + balanced diet is enough | ⬜ | section |
-| 3 | **Hydration by age** — varies with age, activity, body size: children (regular intake), teens (more due to growth and sports), adults (steady across the day), older adults (drink even without thirst — thirst cues weaken with age) | ⬜ | likely 4 tip-cards |
-| 4 | **Hydrating foods** intro — many foods contribute via water content; fruits and vegetables especially good (fluids + vitamins, minerals, fiber) | ⬜ | section intro paragraph |
-| 5 | Hydrating foods list — 12 items: cucumber, celery, lettuce, zucchini (courgette), watermelon, strawberries, cantaloupe (melon), oranges, peaches, pineapple, grapefruit, kiwi | ⬜ | candidate for badge/pill grid or icon list |
-| 6 | Closing line: "Hydration starts with water, but electrolytes and water-rich foods also support fluid balance." | ⬜ | closing paragraph |
+| 1 | **Hydration overview** — what hydration is (replacing water lost via breathing, sweating, urination, digestion); mild dehydration affects energy, concentration, digestion, temperature control; drink regularly; increase when hot / exercising / unwell | ✅ | `topics/hydration.html:123` + `:126` |
+| 2 | **Water and electrolytes** — water as the default; Na/K/Mg roles (fluid balance, muscle contraction, nerve function); matter more under heavy loss; water + balanced diet usually enough | ✅ | `topics/hydration.html:131` + `:134` |
+| 3 | **Hydration by age** — 4 cards: Children, Teens, Adults, Older Adults (drink without thirst) | ✅ | tips-grid, `topics/hydration.html:138-156` |
+| 4 | **Hydrating foods** intro — many foods contribute via water content; fruits and veg especially good (fluids + vitamins, minerals, fibre) | ✅ | `topics/hydration.html:160` |
+| 5 | Hydrating foods list — 12 items in tips-grid: Cucumber, Celery, Lettuce, Zucchini (courgette), Watermelon, Strawberries, Cantaloupe (melon), Oranges, Peaches, Pineapple, Grapefruit, Kiwi | ✅ | tips-grid, `topics/hydration.html:162-211` |
+| 6 | Closing line "Hydration starts with water, but electrolytes and water-rich foods also support fluid balance" | ✅ | `topics/hydration.html:218-220` |
 
-### Defaults Claude will apply if greenlit (per "use your judgement")
+### Defaults applied — 🟡 PLEASE CONFIRM with client on return
 
-| Decision | Default | Reason |
+| Decision | Applied default | Where |
 |---|---|---|
-| 🟡 **Slug** | `hydration.html` | Matches existing `index.html:276` link |
-| 🟡 **Scripture refs** | Default Psalm 42:1-2 ("As the deer pants for streams of water…") in sidebar; John 7:38 ("rivers of living water") as the mid-page biblical-box. Easy for Jon to swap. | Brief contains no Scripture; these are the strongest hydration-themed verses |
-| 🟡 **"By age" section layout** | 4 tip-cards (children, teens, adults, older adults) using `.tips-grid` | Consistent with Power of Napping pattern |
-| 🟡 **Hydrating foods layout** | Grid of small cards / chips with the food name and bootstrap-icon for visual interest. Will mention the high-water-content claim once at the section intro rather than per-item | Brief just lists names; the visual treatment is our call |
-| 🟡 **No video** | Brief doesn't mention one; staying text-only | Matches Clean Living Spaces default |
-| 🟡 **Scope** | Single Hydration page covering all four sections; no spin-off pages | Brief is tight; doesn't warrant splitting |
+| 🟡 **Slug** | `hydration.html` (matches existing `index.html:276` link) | filename |
+| 🟡 **Scripture refs** | Sidebar: Psalm 42:1-2; mid-page: John 7:38 | sidebar `:108`, mid-page `:215` |
+| 🟡 **"By age" section layout** | 4 tip-cards in `.tips-grid` | `:138-156` |
+| 🟡 **Hydrating foods layout** | 12 tip-cards (one per food), `.tips-grid`. Veg use `bi-flower3`, fruit use `bi-droplet-half`. Parenthetical alt names included for Zucchini and Cantaloupe. | `:162-211` |
+| 🟡 **No video** | Text-only | n/a |
+| 🟡 **Scope** | Single Hydration page covers all four brief sections | full page |
+| 🟡 **No daily fluid target cited** | Brief doesn't specify; sources vary (NHS 6-8 cups, US 8 glasses, ISSN-AID, etc.); safer to omit until confirmed | n/a |
+| 🟡 **No "practical tips" section added** | Strictly mirrors what the brief includes; no morning-glass/water-bottle-routine cards added | n/a |
 
-### Outstanding questions for client (raise with first draft)
+### Outstanding questions for client (now narrowed)
 
-- ❓ Want **Scripture refs** at all on this page, and if so, are Psalm 42:1-2 / John 7:38 right, or different?
-- ❓ Should we cite **specific daily fluid targets** (e.g., the often-quoted "8 glasses" or NHS "6-8 cups")? Brief doesn't specify and these vary by source — safer not to without confirmation.
-- ❓ Want a **practical "How to stay hydrated through the day" tip-card grid** added (morning glass, water bottle reminders, etc.), or keep strictly to what the brief says?
+All applied defaults above are flagged 🟡. The only true outstanding items are:
 
-### Status
+- ❓ Approve or swap **Scripture refs** (Psalm 42:1-2 / John 7:38).
+- ❓ Add a **specific daily fluid target** (e.g. NHS "6–8 cups")? Currently omitted.
+- ❓ Add a **practical "how to stay hydrated through the day" tip-card section** later (morning glass, water bottle, reminders)? Currently not included.
 
-Brief logged. **Awaiting Sanjay's call** before building — same as Clean Living Spaces flow:
-- (A) build with defaults above
-- (B) tweak one of the defaults first
-- (C) something else
+### Verification performed
+
+- **Local** (`python3 -m http.server 8000`): Playwright DOM check at 1280 × 800 — title, H1, breadcrumb, 5 sidebar links with Hydration active, 2 biblical refs (Ps 42:1-2 + John 7:38), 2 tips-grids (4 age + 12 foods = 16 tip-cards total), 3 section headings, 4 related-topics pills, help box present. Mobile at 390 × 844 — no horizontal overflow, all 16 tip-cards uniform 351px (stacked).
+- **Live URL verification pending Sanjay's push.**
 
 ---
 
