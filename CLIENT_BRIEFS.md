@@ -240,6 +240,64 @@ All applied defaults above are flagged 🟡. The only true outstanding items are
 
 ---
 
+## 2026-04-26 — Mindful Eating (new brief, NOT YET IMPLEMENTED)
+
+**Source:** Jonathan Verrinder, email "Mindful eating", 26 Apr 2026 1:31 PM
+**Pillar:** Food & Nutrition
+**Target page:** `topics/mindful-eating.html` *(does not yet exist — already linked from `index.html:277`)*
+**Implementation commit:** _pending_
+
+**Note:** This would be the **5th and final** Food & Nutrition page, closing out that pillar.
+
+### Core sections from brief
+
+| # | Deliverable from brief | Status | Notes |
+|---|---|---|---|
+| 1 | **Mindful eating definition** — paying full attention to food, eating slowly, noticing hunger and fullness, receiving meals with gratitude; benefits: healthier choices, avoid overeating, calmer relationship with food | ⬜ | intro paragraphs |
+| 2 | **Simple actions** — praying before meals, eating without distractions, stopping when comfortably full → turns eating into a "holy and peaceful practice" | ⬜ | section |
+| 3 | **Blessings before/after food** — transform eating into a moment of awareness and gratitude; sitting down to eat, chewing slowly, intention over rushing; supports spiritual mindfulness + moderation + awareness of fullness | ⬜ | section |
+| 4 | **Easy Steps to Practice** — 7-step list:<br>4a. Pause before eating and take a breath<br>4b. Say a prayer or blessing before the meal<br>4c. Sit down and remove distractions (phones, TV)<br>4d. Eat slowly and notice the taste, texture, and smell<br>4e. Check your hunger halfway through the meal<br>4f. Stop when satisfied, not overly full<br>4g. End with gratitude, prayer, or blessing after eating | ⬜ | 7 tip-cards in `.tips-grid` |
+| 5 | Closing: mindful eating supports better health, greater peace, and a more respectful relationship with life | ⬜ | closing paragraph |
+| 6 | **Scripture provided by Jon** — 1 Corinthians 10:31: "So whether you eat or drink, or whatever you do, do it all for the glory of God." | ⬜ | use as prominent biblical-box (mid-page or sidebar) |
+
+### Jonathan's image suggestion (open question)
+
+Jon ended the email with: *"(Maybe include image of a dinner plate with knife and fork)?"* — phrased as a question, not a directive. **No asset attached.**
+
+Options:
+- (a) Skip the image and ask Jon to send a photo he wants used.
+- (b) Use a CSS / Bootstrap-icon visual stand-in (e.g. a stylised plate using `bi-egg-fried` / `bi-cup-hot` / `bi-basket3` icons in a container).
+- (c) Source a freely-licensable stock image (Unsplash etc.) and embed it — Jon to confirm.
+
+**Defaulting to (a)** — skip for now, flag in client message — because we don't own an appropriate asset and the page works fine without one.
+
+### Defaults Claude will apply if greenlit
+
+| Decision | Default | Reason |
+|---|---|---|
+| 🟡 **Slug** | `mindful-eating.html` | Matches existing `index.html:277` link |
+| 🟡 **Sidebar Scripture** | 1 Cor 10:31 (the verse Jon provided) | Use the client's own choice as the prominent reference |
+| 🟡 **Mid-page biblical-box** | 1 Timothy 4:4-5 ("everything God created is good… consecrated by the word of God and prayer") | Reinforces the brief's "blessings before and after" theme |
+| 🟡 **Easy Steps layout** | 7 tip-cards in `.tips-grid` (numbered or icon-led, same pattern as Power of Napping) | Brief lists 7 discrete actionable steps |
+| 🟡 **No video** | Brief doesn't mention; matches Clean Living Spaces / Hydration default | n/a |
+| 🟡 **Image** | None included (Jon's suggestion is open question); placeholder space NOT added | Avoids broken-asset look |
+| 🟡 **Scope** | Single Mindful Eating page covering all sections | Brief is self-contained |
+
+### Outstanding questions for client (raise with first draft)
+
+- ❓ **Dinner-plate image** — do you want to send one, or shall we skip / use a Bootstrap-icon stand-in / source a stock photo?
+- ❓ Approve **1 Cor 10:31** (sidebar) + **1 Tim 4:4-5** (mid-page biblical-box), or swap?
+- ❓ Want a **"Common pitfalls" or "What to avoid" section** (e.g. eating in front of screens, skipping blessings, eating standing up) added to balance the positive 7-step list, or stick strictly to the brief?
+
+### Status
+
+Brief logged. **Awaiting Sanjay's call** before building:
+- (A) build with defaults above (skip image, ask Jon to send later)
+- (B) tweak one of the defaults first
+- (C) something else
+
+---
+
 ## 2026-05-12 — Cross-project independent verification sweep
 
 Ran when Sanjay requested "independent verification of all the work you do for this client". Audits every shipped page against the verification workflow defined in `CLAUDE.md` → "Client Brief Verification".
