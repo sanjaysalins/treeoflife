@@ -199,7 +199,7 @@ All applied defaults above are flagged 🟡. The only true outstanding items are
 **Source:** Jonathan Verrinder, email "hydration", 26 Apr 2026 1:06 PM
 **Pillar:** Food & Nutrition
 **Target page:** `topics/hydration.html`
-**Implementation commit:** _pending push_ (this session)
+**Implementation commit:** `156da7a` (deployed to Netlify 2026-05-12, 1s deploy)
 
 ### Core sections from brief
 
@@ -236,7 +236,7 @@ All applied defaults above are flagged 🟡. The only true outstanding items are
 ### Verification performed
 
 - **Local** (`python3 -m http.server 8000`): Playwright DOM check at 1280 × 800 — title, H1, breadcrumb, 5 sidebar links with Hydration active, 2 biblical refs (Ps 42:1-2 + John 7:38), 2 tips-grids (4 age + 12 foods = 16 tip-cards total), 3 section headings, 4 related-topics pills, help box present. Mobile at 390 × 844 — no horizontal overflow, all 16 tip-cards uniform 351px (stacked).
-- **Live URL verification pending Sanjay's push.**
+- **Live** (https://treeoflife-org.netlify.app/topics/hydration.html): deployed in 1s. Playwright re-ran all desktop + mobile DOM checks — every assertion matched the local run. ✅
 
 ---
 
