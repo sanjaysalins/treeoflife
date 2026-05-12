@@ -30,7 +30,8 @@ topics/
   sleep-hygiene.html        # Sleep & Rest topic page — circadian rhythm, sleep hygiene, and biblical rest
   digital-detox.html        # Sleep & Rest topic page — screen-free bedtime and tech-free sleep sanctuary
   power-of-napping.html     # Sleep & Rest topic page — power nap benefits, cautions, and how-to guide
-  stress-management.html    # Mental Health topic page — holistic stress management, mindful breathing, video placeholders
+  stress-management.html    # Mental Health topic page — holistic stress management, embedded box & 3-7-8 breathing videos
+CLIENT_BRIEFS.md            # Per-email brief tracker: deliverables → status → evidence (see "Client Brief Verification")
 assets/
   css/main.css              # All custom styles (~2,475 lines), CSS variables at top
   js/main.js                # All custom JS (~210 lines)
@@ -116,6 +117,26 @@ To change the color scheme, update these variables.
 - Images use WebP where possible for optimization
 - **Browser verification** — use `python3 -m http.server 8000` (not `file://`) for Playwright testing since `file://` protocol is blocked
 - **Clean up screenshots** — after every Playwright browser verification (manual or automated), always delete all PNG/JPEG screenshots generated in the project root before finishing the task. Never leave screenshot files behind.
+
+## Client Brief Verification
+
+Every email/brief from Jonathan (the client) is treated as a contract: each request must be tracked, implemented, and independently verified against the codebase. All briefs are logged in [`CLIENT_BRIEFS.md`](CLIENT_BRIEFS.md).
+
+### Workflow for every client brief
+
+1. **Parse the brief.** Read the email and split it into discrete deliverables. Each sentence/bullet/asset link that asks for something is its own row. Include implicit asks (e.g., "thinking of an intro video?" = a question that needs an answer or a deliverable).
+2. **Locate evidence.** For each deliverable, find where it lives in the code — file path and line number, or a commit SHA if removed. If you can't find it, it's outstanding.
+3. **Mark status.** ✅ Done · 🟡 Partial · ⬜ Outstanding · ❓ Question for client.
+4. **Log everything to `CLIENT_BRIEFS.md`** with a dated section per email: source, pillar, page, deliverables table, outstanding questions, and the verification steps performed.
+5. **Verify in the browser** for any UI-affecting deliverable: serve via `python3 -m http.server 8000`, load with Playwright, evaluate the DOM (count elements, check computed dimensions/ratios, confirm copy is present), then test at both desktop and a mobile viewport (e.g., 390 × 844). Clean up screenshots.
+6. **Surface client questions** at the end of each session — anything the client asked that we haven't answered, and anything we need from them to close out a deliverable.
+
+### When the user asks "did we do X from the email?"
+
+1. Read the brief carefully — don't summarise from memory.
+2. Open `CLIENT_BRIEFS.md` and check if there's already a row for that deliverable.
+3. If not logged, run the workflow above and add a new section.
+4. Reply with a deliverable-by-deliverable table mapping brief items → status → evidence (`file:line`). Never assume "done" without grepping the code.
 
 ## Adding New Content
 
