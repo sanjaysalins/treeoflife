@@ -245,7 +245,7 @@ All applied defaults above are flagged 🟡. The only true outstanding items are
 **Source:** Jonathan Verrinder, email "Mindful eating", 26 Apr 2026 1:31 PM
 **Pillar:** Food & Nutrition
 **Target page:** `topics/mindful-eating.html`
-**Implementation commit:** _pending push_ (this session) — closes out Food & Nutrition at **5/5 pages**.
+**Implementation commit:** `0557a83` (deployed to Netlify 2026-05-12, 1s deploy) — closes out Food & Nutrition at **5/5 pages**.
 
 ### Core sections from brief
 
@@ -287,7 +287,7 @@ All applied defaults above are flagged 🟡. The only true outstanding items are
 ### Verification performed
 
 - **Local** (`python3 -m http.server 8000`): Playwright DOM check at 1280 × 800 — title, H1, breadcrumb, 5 sidebar links with Mindful Eating active, 2 biblical refs (1 Cor 10:31 + 1 Tim 4:4-5), 1 tips-grid with 7 tip-cards, 2 section headings, 4 related-topics, help box present. Mobile at 390 × 844 — no horizontal overflow, all 7 tip-cards uniform 351px (stacked).
-- **Live URL verification pending Sanjay's push.**
+- **Live** (https://treeoflife-org.netlify.app/topics/mindful-eating.html): deployed in 1s. Playwright re-ran all desktop + mobile DOM checks — every assertion matched the local run. ✅
 
 ---
 
