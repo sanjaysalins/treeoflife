@@ -22,10 +22,10 @@ This file tracks every brief from Jonathan (the client) and verifies each delive
 | 6 | "Not about eliminating stress completely… build resilience" | ✅ | tip card, `topics/stress-management.html:139-142` |
 | 7 | Closing: "you don't just manage stress… you transform your relationship with it" | ✅ | `topics/stress-management.html:161-164` |
 | 8 | "Here are a few videos on mindful breathing" intro line | ✅ | `topics/stress-management.html:176-177` |
-| 9 | Intro video for stress management (Jonathan floated the idea — "was thinking of having an intro video?") | ❓ | placeholder live at `topics/stress-management.html:180-186`, awaiting client decision/asset |
+| 9 | Intro video for stress management (Jonathan floated the idea — "was thinking of having an intro video?") | 🟡 | Filled with the 5-min Box Breathing video (`FDikCuovqxk`) repurposed as the intro card at `topics/stress-management.html:180-186`. Client may still commission a bespoke overview video to replace it. |
 
 **Outstanding questions for client:**
-- Confirm whether you want a bespoke intro video, or whether the page intro copy is sufficient without one.
+- Confirm whether the repurposed 5-min Box Breathing video is acceptable as the intro, or whether a bespoke overview intro video should still be recorded.
 
 ---
 
@@ -38,10 +38,10 @@ This file tracks every brief from Jonathan (the client) and verifies each delive
 | # | Deliverable from brief | Status | Evidence |
 |---|---|---|---|
 | 1 | Box Breathing copy: "Box breathing is a quiet, grounding practice…" | ✅ | `topics/stress-management.html:189` |
-| 2 | Box Breathing video 1 — `youtu.be/FDikCuovqxk` (5 Min Box Breathing, Beginner Pace) | ✅ | embedded `topics/stress-management.html:191` |
-| 3 | Box Breathing video 2 — `youtu.be/oN8xV3Kb5-Q` | ✅ | embedded `topics/stress-management.html:194` |
-| 4 | 3-7-8 Breathing copy: "3-7-8 breathing is a peaceful meditation practice…" | ✅ | `topics/stress-management.html:201` |
-| 5 | 3-7-8 Breathing video — `youtu.be/U2jGGY0lzr0` (note: client's email had typo `ttps://`) | ✅ | embedded `topics/stress-management.html:203` |
+| 2 | Box Breathing video 1 — `youtu.be/FDikCuovqxk` (5 Min Box Breathing, Beginner Pace) | ✅ | repurposed as the **Introduction** card at `topics/stress-management.html:183` |
+| 3 | Box Breathing video 2 — `youtu.be/oN8xV3Kb5-Q` | ✅ | embedded under **Box Breathing** card at `topics/stress-management.html:191` |
+| 4 | 3-7-8 Breathing copy: "3-7-8 breathing is a peaceful meditation practice…" | ✅ | `topics/stress-management.html:198` |
+| 5 | 3-7-8 Breathing video — `youtu.be/U2jGGY0lzr0` (note: client's email had typo `ttps://`) | ✅ | embedded under **3-7-8 Breathing** card at `topics/stress-management.html:200` |
 
 **Outstanding questions for client:**
 - ❓ Jonathan asked: "Can these YouTube links be used on the website? Or do we need to do our own version?" — currently embedded as-is. Confirm we may keep the third-party YouTube videos, or commission Tree of Life originals.
@@ -49,7 +49,5 @@ This file tracks every brief from Jonathan (the client) and verifies each delive
 
 **Verification performed:**
 - Loaded `topics/stress-management.html` via `python3 -m http.server 8000`
-- Confirmed 3 iframes present, all with `aspect-ratio 16:9` (ratio = 1.778)
-- Desktop (1280px viewport): iframes render at 778 × 437.6
-- Mobile (390px viewport): iframes render at 309 × 173.8
-- 1 placeholder remains (Intro video) — intentional
+- Confirmed 3 video cards, 3 iframes (one per card, no duplicates), 0 placeholders
+- All iframes at `aspect-ratio 16:9` (ratio = 1.778) at desktop (1280px) and mobile (390px) viewports
