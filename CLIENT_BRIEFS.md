@@ -244,57 +244,50 @@ All applied defaults above are flagged 🟡. The only true outstanding items are
 
 **Source:** Jonathan Verrinder, email "Mindful eating", 26 Apr 2026 1:31 PM
 **Pillar:** Food & Nutrition
-**Target page:** `topics/mindful-eating.html` *(does not yet exist — already linked from `index.html:277`)*
-**Implementation commit:** _pending_
-
-**Note:** This would be the **5th and final** Food & Nutrition page, closing out that pillar.
+**Target page:** `topics/mindful-eating.html`
+**Implementation commit:** _pending push_ (this session) — closes out Food & Nutrition at **5/5 pages**.
 
 ### Core sections from brief
 
-| # | Deliverable from brief | Status | Notes |
+| # | Deliverable from brief | Status | Evidence |
 |---|---|---|---|
-| 1 | **Mindful eating definition** — paying full attention to food, eating slowly, noticing hunger and fullness, receiving meals with gratitude; benefits: healthier choices, avoid overeating, calmer relationship with food | ⬜ | intro paragraphs |
-| 2 | **Simple actions** — praying before meals, eating without distractions, stopping when comfortably full → turns eating into a "holy and peaceful practice" | ⬜ | section |
-| 3 | **Blessings before/after food** — transform eating into a moment of awareness and gratitude; sitting down to eat, chewing slowly, intention over rushing; supports spiritual mindfulness + moderation + awareness of fullness | ⬜ | section |
-| 4 | **Easy Steps to Practice** — 7-step list:<br>4a. Pause before eating and take a breath<br>4b. Say a prayer or blessing before the meal<br>4c. Sit down and remove distractions (phones, TV)<br>4d. Eat slowly and notice the taste, texture, and smell<br>4e. Check your hunger halfway through the meal<br>4f. Stop when satisfied, not overly full<br>4g. End with gratitude, prayer, or blessing after eating | ⬜ | 7 tip-cards in `.tips-grid` |
-| 5 | Closing: mindful eating supports better health, greater peace, and a more respectful relationship with life | ⬜ | closing paragraph |
-| 6 | **Scripture provided by Jon** — 1 Corinthians 10:31: "So whether you eat or drink, or whatever you do, do it all for the glory of God." | ⬜ | use as prominent biblical-box (mid-page or sidebar) |
+| 1 | **Mindful eating definition** — paying full attention, eating slowly, noticing hunger/fullness, receiving with gratitude; benefits: healthier choices, avoid overeating, calmer relationship with food | ✅ | `topics/mindful-eating.html:123` |
+| 2 | **Simple actions** — praying before meals, eating without distractions, stopping when comfortably full → "holy and peaceful practice" | ✅ | `topics/mindful-eating.html:128` |
+| 3 | **Blessings before/after** + sitting down + chewing slowly + intention; supports spiritual mindfulness + moderation + awareness of fullness | ✅ | `topics/mindful-eating.html:128-131` (combined into a single "Intentional Approach" section) |
+| 4 | **Easy Steps to Practice** — 7 cards in `.tips-grid`: | ✅ | grid at `topics/mindful-eating.html:135-163` |
+| 4a | Pause before eating and take a breath | ✅ | `topics/mindful-eating.html:137` (Pause & Breathe) |
+| 4b | Say a prayer or blessing before the meal | ✅ | `topics/mindful-eating.html:141` (Say a Blessing) |
+| 4c | Sit down and remove distractions (phones, TV) | ✅ | `topics/mindful-eating.html:145` (Sit Down, No Distractions) |
+| 4d | Eat slowly and notice taste, texture, smell | ✅ | `topics/mindful-eating.html:149` (Eat Slowly & Notice) |
+| 4e | Check your hunger halfway through the meal | ✅ | `topics/mindful-eating.html:153` (Check In Halfway) |
+| 4f | Stop when satisfied, not overly full | ✅ | `topics/mindful-eating.html:157` (Stop When Satisfied) |
+| 4g | End with gratitude, prayer, or blessing after eating | ✅ | `topics/mindful-eating.html:161` (End with Gratitude) |
+| 5 | Closing: better health, greater peace, more respectful relationship with life | ✅ | `topics/mindful-eating.html:172` |
+| 6 | **Scripture 1 Cor 10:31** (Jon's verse) | ✅ | sidebar biblical box, `topics/mindful-eating.html:107-108` |
 
-### Jonathan's image suggestion (open question)
+### Defaults applied — 🟡 PLEASE CONFIRM with client on return
 
-Jon ended the email with: *"(Maybe include image of a dinner plate with knife and fork)?"* — phrased as a question, not a directive. **No asset attached.**
-
-Options:
-- (a) Skip the image and ask Jon to send a photo he wants used.
-- (b) Use a CSS / Bootstrap-icon visual stand-in (e.g. a stylised plate using `bi-egg-fried` / `bi-cup-hot` / `bi-basket3` icons in a container).
-- (c) Source a freely-licensable stock image (Unsplash etc.) and embed it — Jon to confirm.
-
-**Defaulting to (a)** — skip for now, flag in client message — because we don't own an appropriate asset and the page works fine without one.
-
-### Defaults Claude will apply if greenlit
-
-| Decision | Default | Reason |
+| Decision | Applied default | Where |
 |---|---|---|
-| 🟡 **Slug** | `mindful-eating.html` | Matches existing `index.html:277` link |
-| 🟡 **Sidebar Scripture** | 1 Cor 10:31 (the verse Jon provided) | Use the client's own choice as the prominent reference |
-| 🟡 **Mid-page biblical-box** | 1 Timothy 4:4-5 ("everything God created is good… consecrated by the word of God and prayer") | Reinforces the brief's "blessings before and after" theme |
-| 🟡 **Easy Steps layout** | 7 tip-cards in `.tips-grid` (numbered or icon-led, same pattern as Power of Napping) | Brief lists 7 discrete actionable steps |
-| 🟡 **No video** | Brief doesn't mention; matches Clean Living Spaces / Hydration default | n/a |
-| 🟡 **Image** | None included (Jon's suggestion is open question); placeholder space NOT added | Avoids broken-asset look |
-| 🟡 **Scope** | Single Mindful Eating page covering all sections | Brief is self-contained |
+| 🟡 **Slug** | `mindful-eating.html` (matches existing `index.html:277` link) | filename |
+| 🟡 **Sidebar Scripture** | 1 Cor 10:31 (the verse Jon provided) | sidebar `:107-108` |
+| 🟡 **Mid-page biblical-box** | 1 Timothy 4:4-5 ("everything God created is good… consecrated by the word of God and prayer") — reinforces the brief's "blessings before and after" theme | `:167-168` |
+| 🟡 **Easy Steps layout** | 7 tip-cards in a single `.tips-grid` (icon-led, same pattern as Power of Napping) | `:135-163` |
+| 🟡 **Section consolidation** | Brief's "Simple actions" + "Blessings before/after" paragraphs merged into a single "An Intentional Approach to Eating" section to avoid restating what the 7-step list already operationalises | `:127-131` |
+| 🟡 **No video** | Text-only | n/a |
+| 🟡 **No image** | Per Sanjay's pick of option (a) — image skipped, Jon to send one later if he wants | n/a |
+| 🟡 **Scope** | Single page covering all sections | full page |
 
-### Outstanding questions for client (raise with first draft)
+### Outstanding questions for client
 
-- ❓ **Dinner-plate image** — do you want to send one, or shall we skip / use a Bootstrap-icon stand-in / source a stock photo?
-- ❓ Approve **1 Cor 10:31** (sidebar) + **1 Tim 4:4-5** (mid-page biblical-box), or swap?
-- ❓ Want a **"Common pitfalls" or "What to avoid" section** (e.g. eating in front of screens, skipping blessings, eating standing up) added to balance the positive 7-step list, or stick strictly to the brief?
+- ❓ **Dinner-plate image** — Jon asked "(Maybe include image of a dinner plate with knife and fork)?" — currently skipped; would he like to send a photo, or shall we source / generate one?
+- ❓ Approve **1 Cor 10:31** (sidebar) + **1 Tim 4:4-5** (mid-page), or swap either?
+- ❓ Want a **"Common pitfalls" or "What to avoid" section** (eating in front of screens, skipping blessings, eating standing up) added later, or keep it strictly positive?
 
-### Status
+### Verification performed
 
-Brief logged. **Awaiting Sanjay's call** before building:
-- (A) build with defaults above (skip image, ask Jon to send later)
-- (B) tweak one of the defaults first
-- (C) something else
+- **Local** (`python3 -m http.server 8000`): Playwright DOM check at 1280 × 800 — title, H1, breadcrumb, 5 sidebar links with Mindful Eating active, 2 biblical refs (1 Cor 10:31 + 1 Tim 4:4-5), 1 tips-grid with 7 tip-cards, 2 section headings, 4 related-topics, help box present. Mobile at 390 × 844 — no horizontal overflow, all 7 tip-cards uniform 351px (stacked).
+- **Live URL verification pending Sanjay's push.**
 
 ---
 
