@@ -37,11 +37,11 @@ This file tracks every brief from Jonathan (the client) and verifies each delive
 
 | # | Deliverable from brief | Status | Evidence |
 |---|---|---|---|
-| 1 | Box Breathing copy: "Box breathing is a quiet, grounding practice…" | ✅ | `topics/stress-management.html:189` |
-| 2 | Box Breathing video 1 — `youtu.be/FDikCuovqxk` (5 Min Box Breathing, Beginner Pace) | ✅ | repurposed as the **Introduction** card at `topics/stress-management.html:183` |
-| 3 | Box Breathing video 2 — `youtu.be/oN8xV3Kb5-Q` | ✅ | embedded under **Box Breathing** card at `topics/stress-management.html:191` |
+| 1 | Box Breathing copy: "Box breathing is a quiet, grounding practice…" | ✅ | `topics/stress-management.html:190` |
+| 2 | Box Breathing video 1 — `youtu.be/FDikCuovqxk` (5 Min Box Breathing, Beginner Pace) | ✅ | repurposed as the **Introduction** card; iframe at `topics/stress-management.html:184` (card span 180-186) |
+| 3 | Box Breathing video 2 — `youtu.be/oN8xV3Kb5-Q` | ✅ | embedded under **Box Breathing** card; iframe at `topics/stress-management.html:192` (card span 188-194) |
 | 4 | 3-7-8 Breathing copy: "3-7-8 breathing is a peaceful meditation practice…" | ✅ | `topics/stress-management.html:198` |
-| 5 | 3-7-8 Breathing video — `youtu.be/U2jGGY0lzr0` (note: client's email had typo `ttps://`) | ✅ | embedded under **3-7-8 Breathing** card at `topics/stress-management.html:200` |
+| 5 | 3-7-8 Breathing video — `youtu.be/U2jGGY0lzr0` (note: client's email had typo `ttps://`) | ✅ | embedded under **3-7-8 Breathing** card; iframe at `topics/stress-management.html:200` (card span 196-202) |
 
 **Outstanding questions for client:**
 - ❓ Jonathan asked: "Can these YouTube links be used on the website? Or do we need to do our own version?" — currently embedded as-is. Confirm we may keep the third-party YouTube videos, or commission Tree of Life originals.
@@ -122,3 +122,80 @@ This file tracks every brief from Jonathan (the client) and verifies each delive
 ### Reference notes (from same email thread)
 
 - Jonathan confirmed receipt and approval of the Power of Napping upload on 12 Apr ("Thanks for the other uploads!") — see Apr 7 entry above.
+
+---
+
+## 2026-05-12 — Cross-project independent verification sweep
+
+Ran when Sanjay requested "independent verification of all the work you do for this client". Audits every shipped page against the verification workflow defined in `CLAUDE.md` → "Client Brief Verification".
+
+### A. Live-deploy health
+
+All 10 topic pages return **HTTP 200** on Netlify:
+
+| Slug | URL | Status |
+|---|---|---|
+| biblical-core-eating | [link](https://treeoflife-org.netlify.app/topics/biblical-core-eating.html) | ✅ 200 |
+| digital-detox | [link](https://treeoflife-org.netlify.app/topics/digital-detox.html) | ✅ 200 |
+| fasting-detox | [link](https://treeoflife-org.netlify.app/topics/fasting-detox.html) | ✅ 200 |
+| flexibility | [link](https://treeoflife-org.netlify.app/topics/flexibility.html) | ✅ 200 |
+| power-of-napping | [link](https://treeoflife-org.netlify.app/topics/power-of-napping.html) | ✅ 200 |
+| resistance-training | [link](https://treeoflife-org.netlify.app/topics/resistance-training.html) | ✅ 200 |
+| sleep-hygiene | [link](https://treeoflife-org.netlify.app/topics/sleep-hygiene.html) | ✅ 200 |
+| stress-management | [link](https://treeoflife-org.netlify.app/topics/stress-management.html) | ✅ 200 |
+| walking | [link](https://treeoflife-org.netlify.app/topics/walking.html) | ✅ 200 |
+| whole-foods | [link](https://treeoflife-org.netlify.app/topics/whole-foods.html) | ✅ 200 |
+
+### B. Structural DOM checks (all 10 pages, via Playwright + DOMParser)
+
+Every page passes all checks:
+- `<title>` set and matches H1
+- `.page-title h1` present with the topic name
+- `.breadcrumbs .current` set to the topic name
+- `.services-list a` sidebar present with correct topic count for its category (Food 5, Exercise 3, Sleep 4, Mental 5)
+- Exactly **one** `.services-list a.active` link, and its `href` matches the current page slug
+- `.biblical-box` present (scripture quote)
+- `.related-topics` present (bottom-of-page pills)
+- `.help-box` present (Contact CTA)
+
+### C. Known dead sidebar links (expected per CLAUDE.md)
+
+These slugs are referenced from existing pages' sidebars / Related Topics / `index.html`, but the pages do **not yet exist** — they would 404 if clicked. This matches CLAUDE.md's documented backlog.
+
+| Pillar | Missing topic page |
+|---|---|
+| Food & Nutrition | `hydration.html`, `mindful-eating.html` |
+| Sleep & Rest | `sabbath-rest.html` |
+| Mental Health | `meditation-prayer.html`, `emotional-resilience.html`, `gratitude-practice.html`, `cognitive-health.html` |
+| Family, Community, Environment, Spiritual | *no topic pages exist yet for these pillars* |
+
+### D. Pages shipped without a brief on file in this log
+
+The Client Brief Verification workflow was set up on 2026-05-12. Eight pages were built **before** that date and have no corresponding email logged in this file. They are live and structurally healthy, but their content has never been independently verified against the original client brief because we don't have the brief.
+
+| Page | Live | Brief logged? |
+|---|---|---|
+| `whole-foods.html` | ✅ | ⬜ — original Jonathan email needed |
+| `biblical-core-eating.html` | ✅ | ⬜ |
+| `fasting-detox.html` | ✅ | ⬜ |
+| `resistance-training.html` | ✅ | ⬜ |
+| `walking.html` | ✅ | ⬜ |
+| `flexibility.html` | ✅ | ⬜ |
+| `sleep-hygiene.html` | ✅ | ⬜ |
+| `digital-detox.html` | ✅ | ⬜ |
+| `power-of-napping.html` | ✅ | ✅ Apr 7 (backfilled 2026-05-12) |
+| `stress-management.html` | ✅ | ✅ Apr 9 (script) + Apr 9 (videos) |
+
+**Action for Sanjay:** if you want to bring all pages under the verification workflow, forward the original Jonathan emails for the 8 pages above and I'll backfill them in the same format as Apr 7 Power Napping.
+
+### E. Line-number drift check on logged briefs
+
+Re-verified every `file:line` reference in this file against the current source. Three line numbers in the Apr 9 Breathing videos table had drifted by 1 line since the intro-card repurposing (commit `a795220`) — corrected in this sweep. All other references confirmed accurate.
+
+### F. Summary
+
+- **Live deploy:** 10/10 pages healthy, 0 broken
+- **Structural integrity:** 10/10 pages pass all DOM checks
+- **Brief coverage:** 2/10 pages have full briefs logged; 8/10 missing their source email
+- **Open client questions:** 6 across Stress Management (2) and Gratitude (5) — see entries above; client cadence is slow, do not block on them
+
