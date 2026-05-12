@@ -128,8 +128,9 @@ Every email/brief from Jonathan (the client) is treated as a contract: each requ
 2. **Locate evidence.** For each deliverable, find where it lives in the code — file path and line number, or a commit SHA if removed. If you can't find it, it's outstanding.
 3. **Mark status.** ✅ Done · 🟡 Partial · ⬜ Outstanding · ❓ Question for client.
 4. **Log everything to `CLIENT_BRIEFS.md`** with a dated section per email: source, pillar, page, deliverables table, outstanding questions, and the verification steps performed.
-5. **Verify in the browser** for any UI-affecting deliverable: serve via `python3 -m http.server 8000`, load with Playwright, evaluate the DOM (count elements, check computed dimensions/ratios, confirm copy is present), then test at both desktop and a mobile viewport (e.g., 390 × 844). Clean up screenshots.
-6. **Surface client questions** at the end of each session — anything the client asked that we haven't answered, and anything we need from them to close out a deliverable.
+5. **Local browser verification** for any UI-affecting deliverable: serve via `python3 -m http.server 8000`, load with Playwright, evaluate the DOM (count elements, check computed dimensions/ratios, confirm copy is present), then test at both desktop and a mobile viewport (e.g., 390 × 844). Clean up screenshots.
+6. **Live URL verification after deploy.** `curl` alone is **not** enough — it only proves bytes were served, not that the page renders. After Sanjay confirms the push, poll the Netlify URL for the deployed content, then load it in **Playwright** and re-run the DOM checks against the live site (desktop + mobile). Confirm iframes are visible, copy is present, no unintended placeholders. Console errors from third-party ad/tracker domains (`doubleclick.net`, etc.) are noise — don't flag.
+7. **Surface client questions** at the end of each session — anything the client asked that we haven't answered, and anything we need from them to close out a deliverable.
 
 ### When the user asks "did we do X from the email?"
 
@@ -137,6 +138,18 @@ Every email/brief from Jonathan (the client) is treated as a contract: each requ
 2. Open `CLIENT_BRIEFS.md` and check if there's already a row for that deliverable.
 3. If not logged, run the workflow above and add a new section.
 4. Reply with a deliverable-by-deliverable table mapping brief items → status → evidence (`file:line`). Never assume "done" without grepping the code.
+
+### First actions when Sanjay pastes a new email from Jonathan
+
+1. **Don't write code yet.** Parse the email into a deliverables table.
+2. Add a new dated section to `CLIENT_BRIEFS.md` with: source line, target pillar, target page (does it exist? new file or edit?), deliverables table with all rows marked ⬜, outstanding client questions.
+3. Commit the log entry on its own (no code), so the brief is captured before implementation starts.
+4. Ask Sanjay only the questions whose answers genuinely block the build. Jonathan is slow to reply — if a question can be defaulted with a flag in the brief log ("assumed X — please confirm"), prefer that over waiting.
+5. Once Sanjay greenlights, build → local verify → commit → ask him to push → live verify.
+
+### Scope reminder
+
+Workflow applies **from 2026-05-12 onward only**. The 8 pages built before that date (whole-foods, biblical-core-eating, fasting-detox, resistance-training, walking, flexibility, sleep-hygiene, digital-detox) are out of scope per Sanjay; do not flag them as gaps.
 
 ## Adding New Content
 
