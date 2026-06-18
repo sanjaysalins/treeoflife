@@ -6,6 +6,49 @@ This file tracks every brief from Jonathan (the client) and verifies each delive
 
 ---
 
+## 2026-06-13 — Sabbath Rest (new brief, NOT YET IMPLEMENTED)
+
+**Source:** Jonathan Verrinder, email "Sabbath rest", 13 Jun 2026 7:15 PM
+**Pillar:** Cross-pillar — **Spiritual** (one of Jon's 3 Spiritual topics, per the 6:46 PM restructure) **and** Sleep & Rest (already a planned Sleep topic)
+**Target page:** `topics/sabbath-rest.html` *(new file; already linked as a dead link from **6** places — `index.html:323` (Sleep card) + `:443` (Spiritual card), and the sidebars of `sleep-hygiene.html`, `digital-detox.html`, `power-of-napping.html`, `purpose-meaning.html`; building it makes all 6 resolve)*
+**Implementation commit:** _pending_
+
+### Core sections from brief
+
+| # | Deliverable from brief | Status | Notes |
+|---|---|---|---|
+| 1 | ✨ Intro — "God blessed the seventh day and made it holy" (Genesis 2:3); rest (not work) as the pinnacle of creation; the seventh day as a sacred pause to breathe, restore, realign | ⬜ | intro section |
+| 2 | **1. Whole-Body Restoration** — weekly pause from stress/overwork: lower cortisol, better sleep, improved digestion, hormonal balance | ⬜ | tip card (cross-link physical renewal) |
+| 3 | **2. Mental Clarity & Cognitive Reset** — stop from work/screens/productivity: mental quiet, creativity, reduced overwhelm, improved focus | ⬜ | tip card (cross-link mental clarity) |
+| 4 | **3. Emotional Grounding & Peace** — slowing down, gratitude, joyful rituals, space for reflection | ⬜ | tip card (cross-link emotional grounding) |
+| 5 | **4. Family Connection & Relational Health** — protected togetherness: shared meals, identity-building rituals, reduced conflict, meaningful conversation, weekly reset; Jewish Shabbat family rituals (candles, blessings, meals) | ⬜ | tip card (cross-link Family Health) |
+| 6 | **5. Community Belonging & Social Wellness** — shared meals, community worship, collective singing/celebration, belonging; social connection predicts long-term health | ⬜ | tip card |
+| 7 | **6. Spiritual Alignment & Meaning** — Shabbat as a "sanctuary in time": connection with God, purpose, sacred stillness, *menūḥah* (deep soul-rest) | ⬜ | tip card |
+| 8 | **7. A Weekly Rhythm That Heals** — predictable cycle: stopping → breathing → connecting → restoring; builds resilience for individuals, families, communities | ⬜ | short section / sequence |
+| 9 | **8. Holistic Integration table** — Body (renewal, healing, sleep) · Mind (clarity, calm, focus) · Emotions (joy, grounding) · Spirit (meaning, sacredness) · Family (bonding, identity) · Community (belonging, support); "strengthens every dimension" | ⬜ | Bootstrap `table` (6 rows) |
+
+### Defaults proposed (will apply on greenlight unless told otherwise)
+
+| Decision | Proposed default | Rationale |
+|---|---|---|
+| 🟡 **Slug** | `sabbath-rest.html` | matches all 6 existing dead links |
+| 🟡 **Home pillar** | **Spiritual** — breadcrumb Home › Spiritual › Sabbath Rest; sidebar = the 3 Spiritual topics, Sabbath Rest active | Jon's most recent explicit instruction placed it under Spiritual; Sleep & Rest sidebars still link to it cross-pillar (same model as Meditation & Prayer) |
+| 🟡 **Sections 1-6 layout** | 6 tip-cards in a `.tips-grid`, each with the brief's bullets | matches the Family Health / Purpose & Meaning pattern |
+| 🟡 **Section 7 (rhythm)** | short section with the 4-step cycle highlighted | it's a sequence, not a card set |
+| 🟡 **Section 8 (table)** | Bootstrap `.table` — Dimension / Benefit, 6 rows | the brief literally supplies a table |
+| 🟡 **Cross-links** | physical renewal → Sleep Hygiene · mental clarity → Stress Management · emotional grounding → Gratitude Practice · family → Family Health · community → #community | the brief's "Explore:" prompts |
+| 🟡 **Sidebar Scripture** | Exodus 20:8-10 ("Remember the Sabbath day, to keep it holy") | the Sabbath commandment |
+| 🟡 **Mid-page Scripture box** | Mark 2:27 ("The Sabbath was made for man, not man for the Sabbath") | balances law with grace/rest-for-people |
+| 🟡 **Hebrew terms** | keep "Shabbat" and "menūḥah" with English gloss | client used them deliberately |
+
+### Outstanding questions for client
+
+- ❓ **Home pillar:** filed under **Spiritual** (your 3-topic restructure). It's also linked from Sleep & Rest. Happy with Spiritual as its home, or should it sit under Sleep & Rest?
+- ❓ The brief's "Explore:" links (physical renewal, mental clarity, etc.) — cross-linked to our existing pages. OK?
+- ❓ Confirm/seed **Scripture**: sidebar Exodus 20:8-10 + mid-page Mark 2:27.
+
+---
+
 ## 2026-06-13 — Purpose & Meaning + Spiritual section restructure (✅ SHIPPED + live-verified 2026-06-18)
 
 **Source:** Jonathan Verrinder, email "Purpose and meaning", 13 Jun 2026 6:46 PM
