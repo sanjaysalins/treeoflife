@@ -132,7 +132,7 @@ This file tracks every brief from Jonathan (the client) and verifies each delive
 **Source:** Jonathan Verrinder, email "Gratitude new version please use this one thanks Jon", 21 May 2026 8:00 AM
 **Pillar:** Mental Health
 **Target page:** [`topics/gratitude-practice.html`](topics/gratitude-practice.html) *(new file; slug was already linked as a dead link from `index.html:349` and the Mental Health sidebar)*
-**Implementation commit:** `e4ff68c` (local build verified; awaiting push + live verification)
+**Implementation commit:** `e4ff68c` (pushed to `main`; live-verified on Netlify 2026-06-18)
 
 ### Core sections from brief
 
@@ -168,7 +168,7 @@ This file tracks every brief from Jonathan (the client) and verifies each delive
 ### Verification performed
 
 - **Local** (`python3 -m http.server 8000`): Playwright DOM check at 1280 × 800 — title == H1 == "Gratitude Practice", breadcrumb current correct, 5 Mental Health sidebar links with exactly one `.active` → `gratitude-practice.html`, 4 section headings (What Is Gratitude / Benefits / Journal / Guided Meditation), 3 tips-grids (4 + 4 + 4 = 12 tip-cards), 2 biblical boxes (1 Thess 5:18 + Psalm 100:4), 1 `.journal-section` with 7 fields + Print button, 1 `.video-placeholder`, 4 related-topics pills, help box present. Mobile at 390 × 844 — no horizontal overflow, all 12 tip-cards uniform 351px (stacked), `.video-placeholder` at 16:9 (1.778).
-- **Live:** ⬜ pending push to `main` → re-run DOM checks against Netlify URL.
+- **Live** (https://treeoflife-org.netlify.app/topics/gratitude-practice.html): deployed after push. Playwright re-ran all desktop (1280 × 800) + mobile (390 × 844) DOM checks against the live URL — every assertion matched the local run (title/H1/breadcrumb, 1 active sidebar link, 4 sections, 12 tip-cards, 2 Scripture boxes, journal + print button, 16:9 placeholder, 0 iframes, no mobile overflow, 351px uniform cards). ✅
 
 ---
 
