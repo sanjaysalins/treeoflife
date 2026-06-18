@@ -6,12 +6,12 @@ This file tracks every brief from Jonathan (the client) and verifies each delive
 
 ---
 
-## 2026-06-13 — Sabbath Rest (new brief, NOT YET IMPLEMENTED)
+## 2026-06-13 — Sabbath Rest (✅ SHIPPED + live-verified 2026-06-18)
 
 **Source:** Jonathan Verrinder, email "Sabbath rest", 13 Jun 2026 7:15 PM
 **Pillar:** Cross-pillar — **Spiritual** (one of Jon's 3 Spiritual topics, per the 6:46 PM restructure) **and** Sleep & Rest (already a planned Sleep topic)
 **Target page:** [`topics/sabbath-rest.html`](topics/sabbath-rest.html) *(new file; was linked as a dead link from **6** places — `index.html` Sleep + Spiritual cards, and the sidebars of `sleep-hygiene.html`, `digital-detox.html`, `power-of-napping.html`, `purpose-meaning.html`; building it makes all 6 resolve)*
-**Implementation commit:** `b05c220` (local build verified; awaiting push + live verification)
+**Implementation commit:** `b05c220` (pushed to `main`; live-verified on Netlify 2026-06-18)
 
 ### Core sections from brief
 
@@ -41,7 +41,7 @@ This file tracks every brief from Jonathan (the client) and verifies each delive
 | 🟡 **Mid-page Scripture box** | Mark 2:27 ("The Sabbath was made for man, not man for the Sabbath") | balances law with grace/rest-for-people |
 | 🟡 **Hebrew terms** | keep "Shabbat" and "menūḥah" with English gloss | client used them deliberately |
 
-### Outstanding questions for client
+### Outstanding questions for client — 📨 SENT 2026-06-18 (Sanjay forwarding)
 
 - ❓ **Home pillar:** filed under **Spiritual** (your 3-topic restructure). It's also linked from Sleep & Rest. Happy with Spiritual as its home, or should it sit under Sleep & Rest?
 - ❓ The brief's "Explore:" links (physical renewal, mental clarity, etc.) — cross-linked to our existing pages. OK?
@@ -50,7 +50,7 @@ This file tracks every brief from Jonathan (the client) and verifies each delive
 ### Verification performed
 
 - **Local** (`python3 -m http.server 8000`): Playwright DOM check at 1280 × 800 — title == H1 == "Sabbath Rest", breadcrumb current correct, 3-item Spiritual sidebar with Sabbath Rest `.active`, 3 H3 sections, 6 dimension tip-cards, weekly-rhythm section, holistic-integration `.table` with 6 rows (Body/Mind/Emotions/Spirit/Family/Community), 2 biblical boxes (Ex 20:8-10 + Mark 2:27), 6 body cross-links (sleep-hygiene, stress-management, gratitude-practice, family-health, #community, purpose-meaning — all live), 4 related-topics, help box. Mobile at 390 × 844 — no horizontal overflow, 6 tip-cards + table all 351px.
-- **Live:** ⬜ pending push to `main` → re-run DOM checks against Netlify URL.
+- **Live** (https://treeoflife-org.netlify.app/topics/sabbath-rest.html): deployed after push. Playwright re-ran all desktop (1280 × 800) + mobile (390 × 844) DOM checks against the live URL — every assertion matched the local run (title/H1/breadcrumb, 3-item Spiritual sidebar active, 3 sections, 6 dimension cards, 6-row integration table, 2 Scripture boxes Ex 20:8-10 + Mark 2:27, 6 live cross-links, 4 related-topics, help box; no mobile overflow, 351px uniform widths incl. table). ✅
 
 ---
 
