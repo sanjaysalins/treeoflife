@@ -6,12 +6,12 @@ This file tracks every brief from Jonathan (the client) and verifies each delive
 
 ---
 
-## 2026-06-13 — Purpose & Meaning + Spiritual section restructure (new brief, NOT YET IMPLEMENTED)
+## 2026-06-13 — Purpose & Meaning + Spiritual section restructure (✅ SHIPPED + live-verified 2026-06-18)
 
 **Source:** Jonathan Verrinder, email "Purpose and meaning", 13 Jun 2026 6:46 PM
 **Pillar:** Spiritual (first Spiritual topic page)
 **Target page:** [`topics/purpose-meaning.html`](topics/purpose-meaning.html) *(new file; slug was already linked as a dead link from `index.html`)*
-**Implementation commit:** `49b7e0f` (local build verified; awaiting push + live verification)
+**Implementation commit:** `49b7e0f` (pushed to `main`; live-verified on Netlify 2026-06-18)
 
 > **Explicit client instruction:** "For the spiritual section there only needs to be 3 topics — meditation and prayer, sabbath rest and purpose / meaning — as these crossover into most of the other areas of the health website." → Reduce the Spiritual subject card from its current 5 dead links to exactly these 3.
 
@@ -64,7 +64,7 @@ This file tracks every brief from Jonathan (the client) and verifies each delive
 ### Verification performed
 
 - **Local** (`python3 -m http.server 8000`): Playwright DOM check at 1280 × 800 — title == H1 == "Purpose & Meaning", breadcrumb current correct, 3-item Spiritual sidebar (Meditation & Prayer / Sabbath Rest / Purpose & Meaning) with Purpose & Meaning `.active`, 3 H3 sections, 2 tips-grids (4 integration + 7 application = 11 tip-cards), the 7 application cards carry 14 bullet items (2 each), 2 biblical boxes (Jer 29:11 + Eph 2:10), 3 body cross-links (gratitude-practice, digital-detox, meditation-prayer — all live), 4 related-topics, help box. `index.html` Spiritual card confirmed reduced from 5 links to 3. Mobile at 390 × 844 — no horizontal overflow, all 11 tip-cards uniform 351px.
-- **Live:** ⬜ pending push to `main` → re-run DOM checks against Netlify URL.
+- **Live** (https://treeoflife-org.netlify.app/topics/purpose-meaning.html): deployed after push. Playwright re-ran all desktop (1280 × 800) + mobile (390 × 844) DOM checks against the live URL — every assertion matched the local run (title/H1/breadcrumb, 3-item Spiritual sidebar active, 3 sections, 11 tip-cards across 2 grids, 14 application bullets, 2 Scripture boxes Jer 29:11 + Eph 2:10, 3 live cross-links, 4 related-topics, help box; no mobile overflow, 351px uniform widths). Live `index.html` confirmed: Spiritual card = 3 links (Meditation & Prayer / Sabbath Rest / Purpose & Meaning), Family card = 1 link. ✅
 
 ---
 
