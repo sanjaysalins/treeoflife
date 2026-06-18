@@ -6,6 +6,42 @@ This file tracks every brief from Jonathan (the client) and verifies each delive
 
 ---
 
+## 2026-06-18 — Cross-site internal link sweep
+
+Ran after the June batch (Gratitude, Meditation & Prayer, Family Health, Purpose & Meaning, Sabbath Rest) plus the Family + Spiritual pillar restructures, to confirm no dead internal links were introduced.
+
+**Method:** parsed every `href` in `index.html` + all 16 `topics/*.html`, resolved each relative to its source file, and checked the target exists on disk. (External `http(s)`/`mailto`, pure `#` anchors, and asset links handled separately.)
+
+### Results
+
+| Metric | Count |
+|---|---|
+| Files scanned | 19 (`index.html` + 16 topic pages + service-details/starter not linked in nav) |
+| Internal file links resolved OK | **905** |
+| External links (skipped) | 95 |
+| Anchors / empty (skipped) | 55 |
+| **Dead internal links** | **26** → **11 missing pages** |
+
+### No regressions in recently-shipped work ✅
+
+Zero dead links in the pillars touched this batch: **Family** (`family-health.html` resolves; the 5 old subjects removed), **Spiritual** (`meditation-prayer` / `sabbath-rest` / `purpose-meaning` all resolve), **Sleep & Rest**, **Food & Nutrition**, **Exercise**.
+
+### The 26 dead links = documented backlog (unbuilt pages), not breakage
+
+| Pillar | Missing pages (linked from `index.html` + sibling sidebars / related-topics) |
+|---|---|
+| **Community** (0 of 5 built) | `support-groups`, `volunteering`, `church-health-ministry`, `social-connections`, `mentoring` |
+| **Environment** (1 of 5 built) | `nature-therapy`, `toxin-free-living`, `sustainable-health`, `gardening` |
+| **Mental Health** (3 of 5 built) | `emotional-resilience`, `cognitive-health` |
+
+All match the backlog described in `CLAUDE.md`. No client brief has covered these yet.
+
+### Outstanding questions for client
+
+- ❓ The **Community** card (5 topics) and most of **Environment** (4 topics) still 404. Does Jon want pages for these, or — as with Family/Spiritual — should some pillars be trimmed to fewer topics? (Raise alongside the other pending notes.)
+
+---
+
 ## 2026-06-13 — Sabbath Rest (✅ SHIPPED + live-verified 2026-06-18)
 
 **Source:** Jonathan Verrinder, email "Sabbath rest", 13 Jun 2026 7:15 PM
