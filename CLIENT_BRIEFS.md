@@ -131,22 +131,22 @@ This file tracks every brief from Jonathan (the client) and verifies each delive
 
 **Source:** Jonathan Verrinder, email "Gratitude new version please use this one thanks Jon", 21 May 2026 8:00 AM
 **Pillar:** Mental Health
-**Target page:** `topics/gratitude-practice.html` *(new file; slug already linked as a dead link from `index.html:349` and the Mental Health sidebar in `topics/stress-management.html:99`)*
-**Implementation commit:** _pending_
+**Target page:** [`topics/gratitude-practice.html`](topics/gratitude-practice.html) *(new file; slug was already linked as a dead link from `index.html:349` and the Mental Health sidebar)*
+**Implementation commit:** `e4ff68c` (local build verified; awaiting push + live verification)
 
 ### Core sections from brief
 
 | # | Deliverable from brief | Status | Evidence |
 |---|---|---|---|
-| 1 | **What Is Gratitude?** — more than saying "thank you"; intentional recognition/appreciation of the positive (people, experiences, opportunities, nature, growth); a daily practice supporting emotional, mental, physical, spiritual well-being | ⬜ | intro section |
-| 2 | Four ways gratitude can be practiced — a mindset · a daily habit · a spiritual practice · a therapeutic wellness tool | ⬜ | tips-grid (4 cards) |
-| 3 | Closing of intro — gratitude as part of the connection between mind, body, emotions, and spirit | ⬜ | intro closing line |
-| 4 | **Benefit 1 — Emotional & Mental Wellness** — happiness↑, stress↓, emotional resilience, optimism, reduced anxiety/depression in some; shifts attention from negative thinking → emotional balance | ⬜ | tip card |
-| 5 | **Benefit 2 — Physical Health** — better sleep, lower stress-hormone activity, improved heart health, healthier lifestyle behaviours, more self-care motivation; more likely to exercise / seek help / keep routines | ⬜ | tip card |
-| 6 | **Benefit 3 — Brain & Nervous System Support** — activates reward, emotional regulation, social bonding, positive-mood processing; may retrain the brain toward positive patterns | ⬜ | tip card |
-| 7 | **Benefit 4 — Spiritual & Social Connection** — greater meaning, connection, compassion, mindfulness, inner peace; prayer & worship include gratitude rituals to cultivate presence/awareness | ⬜ | tip card |
-| 8 | **Gratitude Journal** — daily writing: 3 things grateful for · positive moments from the day · personal reflections; note that research supports journaling as one of the most effective gratitude interventions | ⬜ | reuse printable `.journal-section` component (pattern: `topics/flexibility.html:223-255`) |
-| 9 | **Guided Gratitude Meditation** — audio/video session focus: breath awareness · appreciation practices · body gratitude · loving-kindness meditation; combines mindfulness + emotional healing | ⬜ | content section + `.video-placeholder` (no asset supplied yet) |
+| 1 | **What Is Gratitude?** — more than saying "thank you"; intentional recognition/appreciation of the positive (people, experiences, opportunities, nature, growth); a daily practice supporting emotional, mental, physical, spiritual well-being | ✅ | intro, `topics/gratitude-practice.html:127-132` |
+| 2 | Four ways gratitude can be practiced — a mindset · a daily habit · a spiritual practice · a therapeutic wellness tool | ✅ | tips-grid (4 cards), `topics/gratitude-practice.html:134-153` |
+| 3 | Closing of intro — gratitude as part of the connection between mind, body, emotions, and spirit | ✅ | `topics/gratitude-practice.html:155-157` |
+| 4 | **Benefit 1 — Emotional & Mental Wellness** — happiness↑, stress↓, emotional resilience, optimism, reduced anxiety/depression in some; shifts attention from negative thinking → emotional balance | ✅ | tip card, `topics/gratitude-practice.html:161-164` |
+| 5 | **Benefit 2 — Physical Health** — better sleep, lower stress-hormone activity, improved heart health, healthier lifestyle behaviours, more self-care motivation; more likely to exercise / seek help / keep routines | ✅ | tip card, `topics/gratitude-practice.html:165-168` |
+| 6 | **Benefit 3 — Brain & Nervous System Support** — activates reward, emotional regulation, social bonding, positive-mood processing; may retrain the brain toward positive patterns | ✅ | tip card, `topics/gratitude-practice.html:169-172` |
+| 7 | **Benefit 4 — Spiritual & Social Connection** — greater meaning, connection, compassion, mindfulness, inner peace; prayer & worship include gratitude rituals to cultivate presence/awareness | ✅ | tip card, `topics/gratitude-practice.html:173-176` |
+| 8 | **Gratitude Journal** — daily writing: 3 things grateful for · positive moments from the day · personal reflections; note that research supports journaling as one of the most effective gratitude interventions | ✅ | printable `.journal-section`, `topics/gratitude-practice.html:183-224` |
+| 9 | **Guided Gratitude Meditation** — audio/video session focus: breath awareness · appreciation practices · body gratitude · loving-kindness meditation; combines mindfulness + emotional healing | ✅ | 4 focus cards + `.video-placeholder`, `topics/gratitude-practice.html:226-262` |
 
 ### Defaults applied — 🟡 PLEASE CONFIRM with client
 
@@ -167,7 +167,8 @@ This file tracks every brief from Jonathan (the client) and verifies each delive
 
 ### Verification performed
 
-- _pending build_
+- **Local** (`python3 -m http.server 8000`): Playwright DOM check at 1280 × 800 — title == H1 == "Gratitude Practice", breadcrumb current correct, 5 Mental Health sidebar links with exactly one `.active` → `gratitude-practice.html`, 4 section headings (What Is Gratitude / Benefits / Journal / Guided Meditation), 3 tips-grids (4 + 4 + 4 = 12 tip-cards), 2 biblical boxes (1 Thess 5:18 + Psalm 100:4), 1 `.journal-section` with 7 fields + Print button, 1 `.video-placeholder`, 4 related-topics pills, help box present. Mobile at 390 × 844 — no horizontal overflow, all 12 tip-cards uniform 351px (stacked), `.video-placeholder` at 16:9 (1.778).
+- **Live:** ⬜ pending push to `main` → re-run DOM checks against Netlify URL.
 
 ---
 
