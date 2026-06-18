@@ -82,7 +82,9 @@ This file tracks every brief from Jonathan (the client) and verifies each delive
 
 ---
 
-## 2026-04-12 — Gratitude (new brief, NOT YET IMPLEMENTED)
+## 2026-04-12 — Gratitude (⚠️ SUPERSEDED by 2026-05-21 "new version" — see below, NOT IMPLEMENTED)
+
+> **Superseded.** On 21 May 2026 Jonathan sent a "new version" of the Gratitude content ("please use this one") with a different, research/holistic-health framing. The spiritual/Emuna-centred deliverables below were **never built** and are **not** carried into the new page. Kept here for history only. Live page is built from the 2026-05-21 brief.
 
 **Source:** Jonathan Verrinder, email "Gratitude", 12 Apr 2026 8:24 PM
 **Pillar:** Mental Health
@@ -122,6 +124,50 @@ This file tracks every brief from Jonathan (the client) and verifies each delive
 ### Reference notes (from same email thread)
 
 - Jonathan confirmed receipt and approval of the Power of Napping upload on 12 Apr ("Thanks for the other uploads!") — see Apr 7 entry above.
+
+---
+
+## 2026-05-21 — Gratitude (NEW VERSION — supersedes 2026-04-12)
+
+**Source:** Jonathan Verrinder, email "Gratitude new version please use this one thanks Jon", 21 May 2026 8:00 AM
+**Pillar:** Mental Health
+**Target page:** `topics/gratitude-practice.html` *(new file; slug already linked as a dead link from `index.html:349` and the Mental Health sidebar in `topics/stress-management.html:99`)*
+**Implementation commit:** _pending_
+
+### Core sections from brief
+
+| # | Deliverable from brief | Status | Evidence |
+|---|---|---|---|
+| 1 | **What Is Gratitude?** — more than saying "thank you"; intentional recognition/appreciation of the positive (people, experiences, opportunities, nature, growth); a daily practice supporting emotional, mental, physical, spiritual well-being | ⬜ | intro section |
+| 2 | Four ways gratitude can be practiced — a mindset · a daily habit · a spiritual practice · a therapeutic wellness tool | ⬜ | tips-grid (4 cards) |
+| 3 | Closing of intro — gratitude as part of the connection between mind, body, emotions, and spirit | ⬜ | intro closing line |
+| 4 | **Benefit 1 — Emotional & Mental Wellness** — happiness↑, stress↓, emotional resilience, optimism, reduced anxiety/depression in some; shifts attention from negative thinking → emotional balance | ⬜ | tip card |
+| 5 | **Benefit 2 — Physical Health** — better sleep, lower stress-hormone activity, improved heart health, healthier lifestyle behaviours, more self-care motivation; more likely to exercise / seek help / keep routines | ⬜ | tip card |
+| 6 | **Benefit 3 — Brain & Nervous System Support** — activates reward, emotional regulation, social bonding, positive-mood processing; may retrain the brain toward positive patterns | ⬜ | tip card |
+| 7 | **Benefit 4 — Spiritual & Social Connection** — greater meaning, connection, compassion, mindfulness, inner peace; prayer & worship include gratitude rituals to cultivate presence/awareness | ⬜ | tip card |
+| 8 | **Gratitude Journal** — daily writing: 3 things grateful for · positive moments from the day · personal reflections; note that research supports journaling as one of the most effective gratitude interventions | ⬜ | reuse printable `.journal-section` component (pattern: `topics/flexibility.html:223-255`) |
+| 9 | **Guided Gratitude Meditation** — audio/video session focus: breath awareness · appreciation practices · body gratitude · loving-kindness meditation; combines mindfulness + emotional healing | ⬜ | content section + `.video-placeholder` (no asset supplied yet) |
+
+### Defaults applied — 🟡 PLEASE CONFIRM with client
+
+| Decision | Applied default | Rationale |
+|---|---|---|
+| 🟡 **Slug** | `gratitude-practice.html` | matches existing dead links (`index.html:349`, Mental Health sidebar) |
+| 🟡 **Sidebar Scripture** | 1 Thessalonians 5:18 — "give thanks in all circumstances…" | every topic page carries a sidebar Biblical Perspective box; this is the canonical gratitude verse |
+| 🟡 **Mid-page Scripture** | Psalm 100:4 — "Enter his gates with thanksgiving…" | reinforces brief's Benefit 4 (prayer/worship gratitude rituals) |
+| 🟡 **Benefits layout** | 4 tip-cards in a `.tips-grid`, each with the brief's bullet list inside | mirrors Stress Management / Mindful Eating card pattern |
+| 🟡 **Meditation = placeholder** | `.video-placeholder` box, no embed | brief asks for "audio or video sessions" but supplied no URL/asset |
+| 🟡 **Scope** | single page covers all brief sections | matches every other topic page |
+
+### Outstanding questions for client
+
+- ❓ The **Guided Gratitude Meditation** — does Jon have an audio/video to embed, or shall we source/record one? (placeholder in place meanwhile)
+- ❓ Approve or swap **Scripture** defaults: 1 Thess 5:18 (sidebar) + Psalm 100:4 (mid-page).
+- ❓ The new version drops the 12 Apr spiritual/Emuna teachings (Master Key, Quantum Leap, 15-min-Psalms exercise, etc.). Confirm those are intentionally retired and not wanted on this page.
+
+### Verification performed
+
+- _pending build_
 
 ---
 
