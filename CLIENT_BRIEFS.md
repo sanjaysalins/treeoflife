@@ -36,7 +36,7 @@ Zero dead links in the pillars touched this batch: **Family** (`family-health.ht
 
 All match the backlog described in `CLAUDE.md`. No client brief has covered these yet.
 
-### Outstanding questions for client — 📨 SENT 2026-06-18 (Sanjay forwarding)
+### Outstanding questions for client — 📨 SENT 2026-06-18 (forwarded to Jon — awaiting reply)
 
 - ❓ The **Community** card (5 topics) and most of **Environment** (4 topics) still 404. Does Jon want pages for these, or — as with Family/Spiritual — should some pillars be trimmed to fewer topics? Asked him to either send content for the topics to keep, or say which to trim.
 
@@ -77,7 +77,7 @@ All match the backlog described in `CLAUDE.md`. No client brief has covered thes
 | 🟡 **Mid-page Scripture box** | Mark 2:27 ("The Sabbath was made for man, not man for the Sabbath") | balances law with grace/rest-for-people |
 | 🟡 **Hebrew terms** | keep "Shabbat" and "menūḥah" with English gloss | client used them deliberately |
 
-### Outstanding questions for client — 📨 SENT 2026-06-18 (Sanjay forwarding)
+### Outstanding questions for client — 📨 SENT 2026-06-18 (forwarded to Jon — awaiting reply)
 
 - ❓ **Home pillar:** filed under **Spiritual** (your 3-topic restructure). It's also linked from Sleep & Rest. Happy with Spiritual as its home, or should it sit under Sleep & Rest?
 - ❓ The brief's "Explore:" links (physical renewal, mental clarity, etc.) — cross-linked to our existing pages. OK?
@@ -138,7 +138,7 @@ All match the backlog described in `CLAUDE.md`. No client brief has covered thes
 | 🟡 **tzelem Elohim** | keep the Hebrew term with its English gloss | client used it deliberately |
 | 🟡 **No video / no journal** | text + cards only | none requested |
 
-### Outstanding questions for client — 📨 SENT 2026-06-18 (Sanjay forwarding)
+### Outstanding questions for client — 📨 SENT 2026-06-18 (forwarded to Jon — awaiting reply)
 
 - ❓ **Sabbath Rest** is one of your 3 Spiritual topics but no page/content exists yet — shall we draft one (it overlaps the existing Sleep & Rest material), or do you have copy to send? Until then its link will 404.
 - ❓ Confirm removing the other 4 Spiritual subjects (Scripture & Health, Prayer & Healing, Worship & Wellness, Spiritual Disciplines).
@@ -208,7 +208,7 @@ All match the backlog described in `CLAUDE.md`. No client brief has covered thes
 | 🟡 **Yoga / herbal remedies / alternative therapies** | kept verbatim as written | client included them — but flagged below for a faith-based-site check |
 | 🟡 **No video / no journal** | text + cards only | no asset or journal requested |
 
-### Outstanding questions for client — 📨 SENT 2026-06-18 (Sanjay forwarding)
+### Outstanding questions for client — 📨 SENT 2026-06-18 (forwarded to Jon — awaiting reply)
 
 - ❓ Confirm removing the 5 existing Family subjects (Family Meals, Parenting & Wellness, Marriage & Health, Generational Health, Family Fitness) and leaving only Family Health. (Acting on the explicit instruction — flagging for the record.)
 - ❓ Theme 4 lists **yoga, herbal remedies, and "gentle alternative therapies."** On a biblically grounded site some of these can be sensitive — keep all verbatim, soften, or drop any?
@@ -297,7 +297,7 @@ This is a **large** brief: an intro/benefits frame, two teaching sections (what 
 
 - Added `.guided-script` to `assets/css/main.css` (~30 lines, after `.btn-accent:hover`). Tinted accent box with a numbered ordered list; documented as a Custom CSS Component candidate for `CLAUDE.md` once the brief is closed.
 
-### Outstanding questions for client — 📨 SENT 2026-06-18 (awaiting Jon's reply)
+### Outstanding questions for client — 📨 SENT 2026-06-18 (forwarded to Jon — awaiting reply)
 
 - ❓ This is a big page (3 practices + 3 scripts). OK as **one long cornerstone page**, or split Hitbodedut / Lectio Divina into their own topic pages later? (defaulting to one page)
 - ❓ Confirm/seed **Scripture** picks: sidebar Joshua 1:8 + mid-page Psalm 46:10 (brief also cites Psalm 1:2, Romans 12:2).
@@ -464,7 +464,7 @@ This is a **large** brief: an intro/benefits frame, two teaching sections (what 
 | 🟡 **Meditation = placeholder** | `.video-placeholder` box, no embed | brief asks for "audio or video sessions" but supplied no URL/asset |
 | 🟡 **Scope** | single page covers all brief sections | matches every other topic page |
 
-### Outstanding questions for client — 📨 SENT 2026-06-18 (awaiting Jon's reply)
+### Outstanding questions for client — 📨 SENT 2026-06-18 (forwarded to Jon — awaiting reply)
 
 - ❓ The **Guided Gratitude Meditation** — does Jon have an audio/video to embed, or shall we source/record one? (placeholder in place meanwhile)
 - ❓ Approve or swap **Scripture** defaults: 1 Thess 5:18 (sidebar) + Psalm 100:4 (mid-page).
