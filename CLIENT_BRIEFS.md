@@ -10,8 +10,8 @@ This file tracks every brief from Jonathan (the client) and verifies each delive
 
 **Source:** Jonathan Verrinder, email "Mediation and prayer", 12 Jun 2026 11:10 AM
 **Pillar:** Mental Health
-**Target page:** `topics/meditation-prayer.html` *(new file; slug already linked as a dead link from `index.html:347` and the Mental Health sidebars/Related Topics of `stress-management.html` + `gratitude-practice.html`)*
-**Implementation commit:** _pending_
+**Target page:** [`topics/meditation-prayer.html`](topics/meditation-prayer.html) *(new file; slug was already linked as a dead link from `index.html:347` and the Mental Health sidebars/Related Topics of `stress-management.html` + `gratitude-practice.html`)*
+**Implementation commit:** `996402a` (local build verified; awaiting push + live verification)
 
 This is a **large** brief: an intro/benefits frame, two teaching sections (what biblical meditation is; what prayer is), and **three distinct contemplative practices** — Biblical Meditation, Hitbodedut, and Lectio Divina — each with its own explainer **and** a 6-step guided script.
 
@@ -19,58 +19,63 @@ This is a **large** brief: an intro/benefits frame, two teaching sections (what 
 
 | # | Deliverable from brief | Status | Notes |
 |---|---|---|---|
-| 1 | Opening benefits list — reduce stress/anxiety via Scripture-anchored calm · improve emotional regulation by surrendering burdens · strengthen resilience via God's promises · deepen spiritual identity & connection | ⬜ | intro section (tip-cards or list) |
-| 2 | Core-truth framing — biblical meditation is *not* emptying the mind but *filling* it with God's Word; prayer is direct relational communion with God; together a holistic practice supporting emotional/mental/physical well-being | ⬜ | intro paragraph |
+| 1 | Opening benefits list — reduce stress/anxiety via Scripture-anchored calm · improve emotional regulation by surrendering burdens · strengthen resilience via God's promises · deepen spiritual identity & connection | ✅ | 4 tip-cards, `topics/meditation-prayer.html:126-143` |
+| 2 | Core-truth framing — biblical meditation is *not* emptying the mind but *filling* it with God's Word; prayer is direct relational communion with God; together a holistic practice supporting emotional/mental/physical well-being | ✅ | intro, `topics/meditation-prayer.html:123` |
 
 ### B. What Biblical Meditation Is
 
 | # | Deliverable from brief | Status | Notes |
 |---|---|---|---|
-| 3 | Definition — active, intentional reflection on Scripture (Joshua 1:8, Psalm 1:2 — meditate "day and night") | ⬜ | section intro |
-| 4 | 4 key characteristics — Scripture reflection · Prayerful listening · Heart engagement · Transformation (Romans 12:2) | ⬜ | tips-grid (4 cards) |
+| 3 | Definition — active, intentional reflection on Scripture (Joshua 1:8, Psalm 1:2 — meditate "day and night") | ✅ | `topics/meditation-prayer.html:145-148` |
+| 4 | 4 key characteristics — Scripture reflection · Prayerful listening · Heart engagement · Transformation (Romans 12:2) | ✅ | 4 tip-cards, `topics/meditation-prayer.html:150-167` |
 
 ### C. What Prayer Is
 
 | # | Deliverable from brief | Status | Notes |
 |---|---|---|---|
-| 5 | Definition — relational conversation with God: praise, confession, thanksgiving, petition; guided prayer helps slow down, sense God's presence, surrender burdens | ⬜ | section intro |
-| 6 | 4 prayer-practice examples — Imaginative · Centering · Examen · Intercessory | ⬜ | tips-grid (4 cards) |
+| 5 | Definition — relational conversation with God: praise, confession, thanksgiving, petition; guided prayer helps slow down, sense God's presence, surrender burdens | ✅ | `topics/meditation-prayer.html:169-172` |
+| 6 | 4 prayer-practice examples — Imaginative · Centering · Examen · Intercessory | ✅ | 4 tip-cards, `topics/meditation-prayer.html:174-191` |
 
 ### D. Guided Biblical Meditation Script (6 steps)
 
 | # | Deliverable from brief | Status | Notes |
 |---|---|---|---|
-| 7 | 6-step script — Settle the Body · Invite God's Presence · Scripture Focus (Psalm 46:10 "Be still and know that I am God") · Reflection (3 questions) · Response in Prayer · Closing | ⬜ | styled guided-script box (numbered steps) |
+| 7 | 6-step script — Settle the Body · Invite God's Presence · Scripture Focus (Psalm 46:10 "Be still and know that I am God") · Reflection (3 questions) · Response in Prayer · Closing | ✅ | `.guided-script` box, `topics/meditation-prayer.html:200-210` (Ps 46:10 box at `:194-197`) |
 
 ### E. Hitbodedut
 
 | # | Deliverable from brief | Status | Notes |
 |---|---|---|---|
-| 8 | What it is — "self-seclusion"; speaking to God in your own words; most emotionally honest form of Jewish prayer/meditation | ⬜ | section intro |
-| 9 | 5 core elements — Personal prayer · Emotional honesty · Seclusion (ideally in nature) · Conversational tone · Daily practice (~1 hr/day) | ⬜ | tips-grid / list |
-| 10 | Why it supports mental & emotional health — reduce anxiety via release · resilience via verbalising fears/hopes · clarity via reflective self-talk · deepen identity · regulate emotions; "like prayer + journaling + mindfulness + therapy" | ⬜ | benefits sub-section |
-| 11 | How to practice (6 steps) — Find a quiet place · Begin with silence · Speak in your own language · Move through 4 phases (Gratitude, Confession/struggle, Requests, Listening) · Let emotions flow · Close with trust | ⬜ | numbered steps |
-| 12 | Guided Hitbodedut Script (6 steps) — Settle · Speak · Explore · Release · Listen · Close | ⬜ | styled guided-script box |
+| 8 | What it is — "self-seclusion"; speaking to God in your own words; most emotionally honest form of Jewish prayer/meditation | ✅ | `topics/meditation-prayer.html:212-215` |
+| 9 | 5 core elements — Personal prayer · Emotional honesty · Seclusion (ideally in nature) · Conversational tone · Daily practice (~1 hr/day) | ✅ | 5 tip-cards, `topics/meditation-prayer.html:217-238` |
+| 10 | Why it supports mental & emotional health — reduce anxiety via release · resilience via verbalising fears/hopes · clarity via reflective self-talk · deepen identity · regulate emotions; "like prayer + journaling + mindfulness + therapy" | ✅ | `topics/meditation-prayer.html:240-248` |
+| 11 | How to practice (6 steps) — Find a quiet place · Begin with silence · Speak in your own language · Move through 4 phases (Gratitude, Confession/struggle, Requests, Listening) · Let emotions flow · Close with trust | ✅ | 6 step tip-cards, `topics/meditation-prayer.html:250-276` |
+| 12 | Guided Hitbodedut Script (6 steps) — Settle · Speak · Explore · Release · Listen · Close | ✅ | `.guided-script` box, `topics/meditation-prayer.html:278-288` |
 
 ### F. Lectio Divina
 
 | # | Deliverable from brief | Status | Notes |
 |---|---|---|---|
-| 13 | What it is — "divine reading"; slow, prayerful reading so the Word moves mind → heart | ⬜ | section intro |
-| 14 | 4 movements — Lectio (Reading) · Meditatio (Meditation) · Oratio (Prayer) · Contemplatio (Contemplation) | ⬜ | tips-grid (4 cards) |
-| 15 | Guided Lectio Divina Script (6 steps) — Prepare · Read · Notice · Reflect · Pray · Rest | ⬜ | styled guided-script box |
+| 13 | What it is — "divine reading"; slow, prayerful reading so the Word moves mind → heart | ✅ | `topics/meditation-prayer.html:290-293` |
+| 14 | 4 movements — Lectio (Reading) · Meditatio (Meditation) · Oratio (Prayer) · Contemplatio (Contemplation) | ✅ | 4 tip-cards, `topics/meditation-prayer.html:295-312` |
+| 15 | Guided Lectio Divina Script (6 steps) — Prepare · Read · Notice · Reflect · Pray · Rest | ✅ | `.guided-script` box, `topics/meditation-prayer.html:314-324` |
 
-### Defaults proposed (will apply unless client/Sanjay says otherwise)
+### Defaults applied — 🟡 PLEASE CONFIRM with client (Sanjay greenlit one-page build 2026-06-18)
 
-| Decision | Proposed default | Rationale |
+| Decision | Applied default | Rationale |
 |---|---|---|
 | 🟡 **Slug** | `meditation-prayer.html` | matches existing dead links |
-| 🟡 **Scope** | one cornerstone page covering all three practices as stacked sections | mirrors how Clean Living Spaces handled a multi-part brief; matches every other topic page |
-| 🟡 **Guided scripts (×3)** | render each as a styled callout block of numbered steps (new lightweight `.guided-script` style, or reuse `.tips-grid`); not printable journals | three scripts are step lists, not fill-in journals |
+| 🟡 **Scope** | one cornerstone page covering all three practices as stacked sections | Sanjay chose "one cornerstone page"; mirrors Clean Living Spaces |
+| 🟡 **Guided scripts (×3)** | new lightweight `.guided-script` CSS component (tinted box + accent left border + numbered `<ol>`), added to `assets/css/main.css` after `.btn-accent` | three scripts are step lists, not fill-in journals |
 | 🟡 **Sidebar Scripture** | Joshua 1:8 ("meditate on it day and night…") | the brief's own anchor verse for meditation |
 | 🟡 **Mid-page Scripture box** | Psalm 46:10 ("Be still, and know that I am God") | used in the brief's meditation script; central to the theme |
-| 🟡 **Hebrew terms** | keep "Hitbodedut" and "Lord Yeshua" as written, with brief parentheticals | client used them deliberately |
+| 🟡 **Hebrew terms** | kept "Hitbodedut" (+ התבודדות) and "Lord Yeshua" verbatim | client used them deliberately |
+| 🟡 **"1 hour a day"** | kept as written in the Daily Practice card | brief states it explicitly |
 | 🟡 **No video** | text-only (no asset supplied) | consistent with other text pages |
+
+### New CSS component
+
+- Added `.guided-script` to `assets/css/main.css` (~30 lines, after `.btn-accent:hover`). Tinted accent box with a numbered ordered list; documented as a Custom CSS Component candidate for `CLAUDE.md` once the brief is closed.
 
 ### Outstanding questions for client
 
@@ -78,6 +83,11 @@ This is a **large** brief: an intro/benefits frame, two teaching sections (what 
 - ❓ Confirm/seed **Scripture** picks: sidebar Joshua 1:8 + mid-page Psalm 46:10 (brief also cites Psalm 1:2, Romans 12:2).
 - ❓ The brief recommends Hitbodedut **"one hour a day"** — keep that figure as-is, or soften (e.g. "even a few minutes")? (defaulting to as-written)
 - ❓ Keep the Hebrew/Hebraic terms **"Hitbodedut"** and **"Lord Yeshua"** verbatim? (defaulting to yes)
+
+### Verification performed
+
+- **Local** (`python3 -m http.server 8000`): Playwright DOM check at 1280 × 800 — title == H1 == "Meditation & Prayer", breadcrumb current correct, 5 Mental Health sidebar links with exactly one `.active` → `meditation-prayer.html`, 6 H3 sections (Why / Biblical Meditation / Prayer / Guided Meditation / Hitbodedut / Lectio Divina), 6 tips-grids (4 + 4 + 4 + 5 + 6 + 4 = 27 tip-cards), 3 `.guided-script` boxes each with 6 steps, 2 biblical boxes (Joshua 1:8 + Psalm 46:10), 4 related-topics pills, help box present, 0 iframes. Mobile at 390 × 844 — no horizontal overflow, all 27 tip-cards and all 3 guided-script boxes uniform 351px (stacked).
+- **Live:** ⬜ pending push to `main` → re-run DOM checks against Netlify URL.
 
 ---
 
