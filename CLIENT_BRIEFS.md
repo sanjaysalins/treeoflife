@@ -36,9 +36,9 @@ Zero dead links in the pillars touched this batch: **Family** (`family-health.ht
 
 All match the backlog described in `CLAUDE.md`. No client brief has covered these yet.
 
-### Outstanding questions for client
+### Outstanding questions for client — 📨 SENT 2026-06-18 (Sanjay forwarding)
 
-- ❓ The **Community** card (5 topics) and most of **Environment** (4 topics) still 404. Does Jon want pages for these, or — as with Family/Spiritual — should some pillars be trimmed to fewer topics? (Raise alongside the other pending notes.)
+- ❓ The **Community** card (5 topics) and most of **Environment** (4 topics) still 404. Does Jon want pages for these, or — as with Family/Spiritual — should some pillars be trimmed to fewer topics? Asked him to either send content for the topics to keep, or say which to trim.
 
 ---
 
