@@ -6,6 +6,81 @@ This file tracks every brief from Jonathan (the client) and verifies each delive
 
 ---
 
+## 2026-06-12 — Meditation & Prayer (new brief, NOT YET IMPLEMENTED)
+
+**Source:** Jonathan Verrinder, email "Mediation and prayer", 12 Jun 2026 11:10 AM
+**Pillar:** Mental Health
+**Target page:** `topics/meditation-prayer.html` *(new file; slug already linked as a dead link from `index.html:347` and the Mental Health sidebars/Related Topics of `stress-management.html` + `gratitude-practice.html`)*
+**Implementation commit:** _pending_
+
+This is a **large** brief: an intro/benefits frame, two teaching sections (what biblical meditation is; what prayer is), and **three distinct contemplative practices** — Biblical Meditation, Hitbodedut, and Lectio Divina — each with its own explainer **and** a 6-step guided script.
+
+### A. Intro & "Why Meditation + Prayer Support Health"
+
+| # | Deliverable from brief | Status | Notes |
+|---|---|---|---|
+| 1 | Opening benefits list — reduce stress/anxiety via Scripture-anchored calm · improve emotional regulation by surrendering burdens · strengthen resilience via God's promises · deepen spiritual identity & connection | ⬜ | intro section (tip-cards or list) |
+| 2 | Core-truth framing — biblical meditation is *not* emptying the mind but *filling* it with God's Word; prayer is direct relational communion with God; together a holistic practice supporting emotional/mental/physical well-being | ⬜ | intro paragraph |
+
+### B. What Biblical Meditation Is
+
+| # | Deliverable from brief | Status | Notes |
+|---|---|---|---|
+| 3 | Definition — active, intentional reflection on Scripture (Joshua 1:8, Psalm 1:2 — meditate "day and night") | ⬜ | section intro |
+| 4 | 4 key characteristics — Scripture reflection · Prayerful listening · Heart engagement · Transformation (Romans 12:2) | ⬜ | tips-grid (4 cards) |
+
+### C. What Prayer Is
+
+| # | Deliverable from brief | Status | Notes |
+|---|---|---|---|
+| 5 | Definition — relational conversation with God: praise, confession, thanksgiving, petition; guided prayer helps slow down, sense God's presence, surrender burdens | ⬜ | section intro |
+| 6 | 4 prayer-practice examples — Imaginative · Centering · Examen · Intercessory | ⬜ | tips-grid (4 cards) |
+
+### D. Guided Biblical Meditation Script (6 steps)
+
+| # | Deliverable from brief | Status | Notes |
+|---|---|---|---|
+| 7 | 6-step script — Settle the Body · Invite God's Presence · Scripture Focus (Psalm 46:10 "Be still and know that I am God") · Reflection (3 questions) · Response in Prayer · Closing | ⬜ | styled guided-script box (numbered steps) |
+
+### E. Hitbodedut
+
+| # | Deliverable from brief | Status | Notes |
+|---|---|---|---|
+| 8 | What it is — "self-seclusion"; speaking to God in your own words; most emotionally honest form of Jewish prayer/meditation | ⬜ | section intro |
+| 9 | 5 core elements — Personal prayer · Emotional honesty · Seclusion (ideally in nature) · Conversational tone · Daily practice (~1 hr/day) | ⬜ | tips-grid / list |
+| 10 | Why it supports mental & emotional health — reduce anxiety via release · resilience via verbalising fears/hopes · clarity via reflective self-talk · deepen identity · regulate emotions; "like prayer + journaling + mindfulness + therapy" | ⬜ | benefits sub-section |
+| 11 | How to practice (6 steps) — Find a quiet place · Begin with silence · Speak in your own language · Move through 4 phases (Gratitude, Confession/struggle, Requests, Listening) · Let emotions flow · Close with trust | ⬜ | numbered steps |
+| 12 | Guided Hitbodedut Script (6 steps) — Settle · Speak · Explore · Release · Listen · Close | ⬜ | styled guided-script box |
+
+### F. Lectio Divina
+
+| # | Deliverable from brief | Status | Notes |
+|---|---|---|---|
+| 13 | What it is — "divine reading"; slow, prayerful reading so the Word moves mind → heart | ⬜ | section intro |
+| 14 | 4 movements — Lectio (Reading) · Meditatio (Meditation) · Oratio (Prayer) · Contemplatio (Contemplation) | ⬜ | tips-grid (4 cards) |
+| 15 | Guided Lectio Divina Script (6 steps) — Prepare · Read · Notice · Reflect · Pray · Rest | ⬜ | styled guided-script box |
+
+### Defaults proposed (will apply unless client/Sanjay says otherwise)
+
+| Decision | Proposed default | Rationale |
+|---|---|---|
+| 🟡 **Slug** | `meditation-prayer.html` | matches existing dead links |
+| 🟡 **Scope** | one cornerstone page covering all three practices as stacked sections | mirrors how Clean Living Spaces handled a multi-part brief; matches every other topic page |
+| 🟡 **Guided scripts (×3)** | render each as a styled callout block of numbered steps (new lightweight `.guided-script` style, or reuse `.tips-grid`); not printable journals | three scripts are step lists, not fill-in journals |
+| 🟡 **Sidebar Scripture** | Joshua 1:8 ("meditate on it day and night…") | the brief's own anchor verse for meditation |
+| 🟡 **Mid-page Scripture box** | Psalm 46:10 ("Be still, and know that I am God") | used in the brief's meditation script; central to the theme |
+| 🟡 **Hebrew terms** | keep "Hitbodedut" and "Lord Yeshua" as written, with brief parentheticals | client used them deliberately |
+| 🟡 **No video** | text-only (no asset supplied) | consistent with other text pages |
+
+### Outstanding questions for client
+
+- ❓ This is a big page (3 practices + 3 scripts). OK as **one long cornerstone page**, or split Hitbodedut / Lectio Divina into their own topic pages later? (defaulting to one page)
+- ❓ Confirm/seed **Scripture** picks: sidebar Joshua 1:8 + mid-page Psalm 46:10 (brief also cites Psalm 1:2, Romans 12:2).
+- ❓ The brief recommends Hitbodedut **"one hour a day"** — keep that figure as-is, or soften (e.g. "even a few minutes")? (defaulting to as-written)
+- ❓ Keep the Hebrew/Hebraic terms **"Hitbodedut"** and **"Lord Yeshua"** verbatim? (defaulting to yes)
+
+---
+
 ## 2026-04-09 — Stress Management intro script
 
 **Source:** Jonathan Verrinder, email "Stress management", 9 Apr 2026 9:08 PM
@@ -159,7 +234,7 @@ This file tracks every brief from Jonathan (the client) and verifies each delive
 | 🟡 **Meditation = placeholder** | `.video-placeholder` box, no embed | brief asks for "audio or video sessions" but supplied no URL/asset |
 | 🟡 **Scope** | single page covers all brief sections | matches every other topic page |
 
-### Outstanding questions for client
+### Outstanding questions for client — 📨 SENT 2026-06-18 (awaiting Jon's reply)
 
 - ❓ The **Guided Gratitude Meditation** — does Jon have an audio/video to embed, or shall we source/record one? (placeholder in place meanwhile)
 - ❓ Approve or swap **Scripture** defaults: 1 Thess 5:18 (sidebar) + Psalm 100:4 (mid-page).
