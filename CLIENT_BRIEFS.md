@@ -6,7 +6,76 @@ This file tracks every brief from Jonathan (the client) and verifies each delive
 
 ---
 
-## 2026-06-12 — Meditation & Prayer (new brief, NOT YET IMPLEMENTED)
+## 2026-06-13 — Family Health (new brief, NOT YET IMPLEMENTED)
+
+**Source:** Jonathan Verrinder, email "Family health", 13 Jun 2026 6:21 PM
+**Pillar:** Family (this is the **first** Family topic page)
+**Target page:** `topics/family-health.html` *(new file — no existing slug; the Family card in `index.html:370-376` currently lists 5 different dead links)*
+**Implementation commit:** _pending_
+
+> **Explicit client instruction:** "this is to be the only and main topic on family health … so please remove all the other subjects in the family health section." → The 5 current Family subject links (Family Meals, Parenting & Wellness, Marriage & Health, Generational Health, Family Fitness) must be **removed** from `index.html` and replaced with a single link to `family-health.html`. None of those 5 pages exist (all dead links today).
+
+### A. Biblical lens — the family in Scripture
+
+| # | Deliverable from brief | Status | Notes |
+|---|---|---|---|
+| 1 | Intro — family health through a biblical lens = nurturing the whole household (body, mind, spirit, relationships) per God's design | ⬜ | intro paragraph |
+| 2 | The Bible presents the family as 4 things — unit of discipleship (Deut 6:6-7) · place of nurture & protection (Prov 14:26) · source of generational blessing (Ps 103:17) · body of mutual care (1 Cor 12:25-26) | ⬜ | tips-grid (4 cards) |
+| 3 | Holistic family health in Scripture — 5 areas: physical stewardship (1 Cor 6:19-20) · emotional/relational peace (Col 3:12-14) · spiritual formation · healthy rhythms / Sabbath (Ex 20:8-10) · wise living (Prov 25:28); tagline "whole-family flourishing under God's wisdom" | ⬜ | tips-grid (5 cards) + closing line |
+
+### B. Holistic framework — 6 core themes
+
+| # | Deliverable from brief | Status | Notes |
+|---|---|---|---|
+| 4 | Framework intro — family as a whole interconnected ecosystem (physical, emotional, mental, relational, environmental); blends natural health, lifestyle coaching, emotional support | ⬜ | section intro (merges the brief's repeated "core themes" list into the 6 detailed themes below) |
+| 5 | 🧩 Whole-family wellbeing — interconnected system: routines, communication, stress, shared habits | ⬜ | tip card |
+| 6 | 🥗 Nutrition & lifestyle — balanced diets, hydration, meal planning, reducing processed foods, family recipes | ⬜ | tip card (cross-link Hydration / Whole Foods) |
+| 7 | 😌 Mental & emotional health — stress management, mindfulness, emotional regulation, healthy communication, children's mental health | ⬜ | tip card (cross-link Stress Management) |
+| 8 | 🧘 Holistic practices — yoga for kids & parents, meditation, herbal remedies, natural living, gentle alternative therapies | ⬜ | tip card — ⚠️ see question on yoga/herbal on a faith-based site |
+| 9 | 🛏️ Sleep, routines & home environment — sleep routines, screen-time balance, calm low-toxicity homes | ⬜ | tip card (cross-link Sleep Hygiene / Digital Detox / Clean Living Spaces) |
+| 10 | 🩺 Preventive care & education — regular checkups, early detection, teaching children body awareness, early healthy habits | ⬜ | tip card |
+
+### C. Every family is unique
+
+| # | Deliverable from brief | Status | Notes |
+|---|---|---|---|
+| 11 | "Not one-size-fits-all" — each family adapts the guidelines to its own system | ⬜ | section intro |
+| 12 | 🌱 Key Points — every family system is unique · guidelines are flexible (adjust, not rigid) · strengths & challenges vary · adaptation improves success | ⬜ | tips-grid (4 cards) |
+
+### D. index.html change
+
+| # | Deliverable from brief | Status | Notes |
+|---|---|---|---|
+| 13 | Remove the 5 existing Family subject links; replace with a single `Family Health` link → `topics/family-health.html` | ⬜ | `index.html:370-376` |
+
+### Defaults proposed (will apply on greenlight unless told otherwise)
+
+| Decision | Proposed default | Rationale |
+|---|---|---|
+| 🟡 **Slug** | `family-health.html` | no existing slug; descriptive and matches the brief title |
+| 🟡 **Scope** | one cornerstone Family Health page (all brief sections); Family becomes a 1-topic pillar | client's explicit instruction |
+| 🟡 **Section consolidation** | merge the brief's duplicated "core themes" list (intro) into the 6 detailed numbered themes so they aren't stated twice | brief repeats the same 6 themes in summary then detail |
+| 🟡 **Cross-linking** | link the themes that overlap existing pages (Hydration, Whole Foods, Stress Management, Sleep Hygiene, Digital Detox, Clean Living Spaces, Meditation & Prayer) — supports "corresponds to the rest of the topics on the website" | client's framing |
+| 🟡 **Sidebar Scripture** | Deuteronomy 6:6-7 (family discipleship) | the brief's lead verse |
+| 🟡 **Mid-page Scripture box** | Joshua 24:15 ("as for me and my household, we will serve the Lord") | classic family/household verse |
+| 🟡 **Sidebar topic list** | single-item Family list ("Family Health", active) | only Family topic now |
+| 🟡 **Yoga / herbal remedies / alternative therapies** | kept verbatim as written | client included them — but flagged below for a faith-based-site check |
+| 🟡 **No video / no journal** | text + cards only | no asset or journal requested |
+
+### Outstanding questions for client
+
+- ❓ Confirm removing the 5 existing Family subjects (Family Meals, Parenting & Wellness, Marriage & Health, Generational Health, Family Fitness) and leaving only Family Health. (Acting on the explicit instruction — flagging for the record.)
+- ❓ Theme 4 lists **yoga, herbal remedies, and "gentle alternative therapies."** On a biblically grounded site some of these can be sensitive — keep all verbatim, soften, or drop any?
+- ❓ Confirm/seed **Scripture**: sidebar Deut 6:6-7 + mid-page Joshua 24:15.
+- ❓ OK to **cross-link** the overlapping themes to our existing topic pages (hydration, stress, sleep, clean spaces, etc.)?
+
+### Reference notes
+
+- Brief content overlaps heavily with existing pillars by design ("corresponds to the rest of the topics on the website") — Family Health is intended as a hub that ties the other pillars together for the household.
+
+---
+
+## 2026-06-12 — Meditation & Prayer (✅ SHIPPED + live-verified 2026-06-18)
 
 **Source:** Jonathan Verrinder, email "Mediation and prayer", 12 Jun 2026 11:10 AM
 **Pillar:** Mental Health
