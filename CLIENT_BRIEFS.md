@@ -11,7 +11,7 @@ This file tracks every brief from Jonathan (the client) and verifies each delive
 **Source:** Jonathan Verrinder, email "Mediation and prayer", 12 Jun 2026 11:10 AM
 **Pillar:** Mental Health
 **Target page:** [`topics/meditation-prayer.html`](topics/meditation-prayer.html) *(new file; slug was already linked as a dead link from `index.html:347` and the Mental Health sidebars/Related Topics of `stress-management.html` + `gratitude-practice.html`)*
-**Implementation commit:** `996402a` (local build verified; awaiting push + live verification)
+**Implementation commit:** `996402a` (pushed to `main`; live-verified on Netlify 2026-06-18)
 
 This is a **large** brief: an intro/benefits frame, two teaching sections (what biblical meditation is; what prayer is), and **three distinct contemplative practices** — Biblical Meditation, Hitbodedut, and Lectio Divina — each with its own explainer **and** a 6-step guided script.
 
@@ -77,7 +77,7 @@ This is a **large** brief: an intro/benefits frame, two teaching sections (what 
 
 - Added `.guided-script` to `assets/css/main.css` (~30 lines, after `.btn-accent:hover`). Tinted accent box with a numbered ordered list; documented as a Custom CSS Component candidate for `CLAUDE.md` once the brief is closed.
 
-### Outstanding questions for client
+### Outstanding questions for client — 📨 SENT 2026-06-18 (awaiting Jon's reply)
 
 - ❓ This is a big page (3 practices + 3 scripts). OK as **one long cornerstone page**, or split Hitbodedut / Lectio Divina into their own topic pages later? (defaulting to one page)
 - ❓ Confirm/seed **Scripture** picks: sidebar Joshua 1:8 + mid-page Psalm 46:10 (brief also cites Psalm 1:2, Romans 12:2).
@@ -87,7 +87,7 @@ This is a **large** brief: an intro/benefits frame, two teaching sections (what 
 ### Verification performed
 
 - **Local** (`python3 -m http.server 8000`): Playwright DOM check at 1280 × 800 — title == H1 == "Meditation & Prayer", breadcrumb current correct, 5 Mental Health sidebar links with exactly one `.active` → `meditation-prayer.html`, 6 H3 sections (Why / Biblical Meditation / Prayer / Guided Meditation / Hitbodedut / Lectio Divina), 6 tips-grids (4 + 4 + 4 + 5 + 6 + 4 = 27 tip-cards), 3 `.guided-script` boxes each with 6 steps, 2 biblical boxes (Joshua 1:8 + Psalm 46:10), 4 related-topics pills, help box present, 0 iframes. Mobile at 390 × 844 — no horizontal overflow, all 27 tip-cards and all 3 guided-script boxes uniform 351px (stacked).
-- **Live:** ⬜ pending push to `main` → re-run DOM checks against Netlify URL.
+- **Live** (https://treeoflife-org.netlify.app/topics/meditation-prayer.html): deployed after push. Playwright re-ran all desktop (1280 × 800) + mobile (390 × 844) DOM checks against the live URL — every assertion matched the local run (title/H1/breadcrumb, 1 active sidebar link, 6 sections, 27 tip-cards across 6 grids, 3 guided-script boxes × 6 steps with the `.guided-script` 4px accent border applied, 2 Scripture boxes Josh 1:8 + Ps 46:10, 4 related-topics, help box; no mobile overflow, 351px uniform widths). ✅
 
 ---
 

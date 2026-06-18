@@ -186,7 +186,9 @@ To change the color scheme, update these variables.
 
 ## Client Brief Verification
 
-Every email/brief from Jonathan (the client) is treated as a contract: each request must be tracked, implemented, and independently verified against the codebase. All briefs are logged in [`CLIENT_BRIEFS.md`](CLIENT_BRIEFS.md).
+Every email/brief from Jonathan (the client) is treated as a contract: each request must be tracked, implemented, and independently verified against the codebase. All briefs are logged in [`CLIENT_BRIEFS.md`](CLIENT_BRIEFS.md). The full step-by-step is also packaged as the **`client-brief` skill** (`.claude/skills/client-brief/SKILL.md`) — invoke it whenever a new brief arrives or one needs shipping.
+
+**Ship sequence for this client (set 2026-06-18):** Claude **pushes**, Claude **validates post-push** (live, in Playwright), then Claude **provides Sanjay a short client-ready brief** to forward to Jon. Do not ask Sanjay to push; do not stop after local verification.
 
 ### Workflow for every client brief
 
@@ -195,8 +197,8 @@ Every email/brief from Jonathan (the client) is treated as a contract: each requ
 3. **Mark status.** ✅ Done · 🟡 Partial · ⬜ Outstanding · ❓ Question for client.
 4. **Log everything to `CLIENT_BRIEFS.md`** with a dated section per email: source, pillar, page, deliverables table, outstanding questions, and the verification steps performed.
 5. **Local browser verification** for any UI-affecting deliverable: serve via `python3 -m http.server 8000`, load with Playwright, evaluate the DOM (count elements, check computed dimensions/ratios, confirm copy is present), then test at both desktop and a mobile viewport (e.g., 390 × 844). Clean up screenshots.
-6. **Live URL verification after deploy.** `curl` alone is **not** enough — it only proves bytes were served, not that the page renders. After Sanjay confirms the push, poll the Netlify URL for the deployed content, then load it in **Playwright** and re-run the DOM checks against the live site (desktop + mobile). Confirm iframes are visible, copy is present, no unintended placeholders. Console errors from third-party ad/tracker domains (`doubleclick.net`, etc.) are noise — don't flag.
-7. **Surface client questions** at the end of each session — anything the client asked that we haven't answered, and anything we need from them to close out a deliverable.
+6. **Push, then verify live (Claude does both).** Commit, backfill the SHA into the brief log, then `git push origin main` yourself and confirm it landed. `curl` alone is **not** enough — it only proves bytes were served, not that the page renders. Poll the Netlify URL for the deployed content, then load it in **Playwright** and re-run the DOM checks against the live site (desktop + mobile). Confirm iframes are visible, copy is present, no unintended placeholders. Console errors from third-party ad/tracker domains (`doubleclick.net`, etc.) are noise — don't flag.
+7. **Hand Sanjay a client-ready brief.** After live verification, give Sanjay a short (3–5 line) note to forward to Jon: the live URL + a numbered list of confirmation/swap-out questions (the 🟡 defaults and ❓ questions), no marketing copy. Mark those questions 📨 SENT in `CLIENT_BRIEFS.md`.
 
 ### When the user asks "did we do X from the email?"
 
@@ -211,7 +213,7 @@ Every email/brief from Jonathan (the client) is treated as a contract: each requ
 2. Add a new dated section to `CLIENT_BRIEFS.md` with: source line, target pillar, target page (does it exist? new file or edit?), deliverables table with all rows marked ⬜, outstanding client questions.
 3. Commit the log entry on its own (no code), so the brief is captured before implementation starts.
 4. Ask Sanjay only the questions whose answers genuinely block the build. Jonathan is slow to reply — if a question can be defaulted with a flag in the brief log ("assumed X — please confirm"), prefer that over waiting.
-5. Once Sanjay greenlights, build → local verify → commit → ask him to push → live verify.
+5. Once Sanjay greenlights, build → local verify → commit → **push (you do it)** → **live verify (you do it)** → **hand Sanjay a short client brief to forward**.
 
 ### Scope reminder
 
