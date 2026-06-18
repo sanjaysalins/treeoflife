@@ -10,8 +10,8 @@ This file tracks every brief from Jonathan (the client) and verifies each delive
 
 **Source:** Jonathan Verrinder, email "Purpose and meaning", 13 Jun 2026 6:46 PM
 **Pillar:** Spiritual (first Spiritual topic page)
-**Target page:** `topics/purpose-meaning.html` *(new file; slug already linked as a dead link from `index.html:446`)*
-**Implementation commit:** _pending_
+**Target page:** [`topics/purpose-meaning.html`](topics/purpose-meaning.html) *(new file; slug was already linked as a dead link from `index.html`)*
+**Implementation commit:** `49b7e0f` (local build verified; awaiting push + live verification)
 
 > **Explicit client instruction:** "For the spiritual section there only needs to be 3 topics — meditation and prayer, sabbath rest and purpose / meaning — as these crossover into most of the other areas of the health website." → Reduce the Spiritual subject card from its current 5 dead links to exactly these 3.
 
@@ -19,32 +19,32 @@ This file tracks every brief from Jonathan (the client) and verifies each delive
 
 | # | Deliverable from brief | Status | Notes |
 |---|---|---|---|
-| 1 | Reduce Spiritual card to 3 topics: **Meditation & Prayer**, **Sabbath Rest**, **Purpose & Meaning**; remove Scripture & Health, Prayer & Healing, Worship & Wellness, Spiritual Disciplines | ⬜ | `index.html:441-447` |
-| 1a | "Meditation & Prayer" → `topics/meditation-prayer.html` (already exists — built under Mental Health; cross-pillar link, matches Jon's "crossover" point) | ⬜ | live page |
-| 1b | "Sabbath Rest" → `topics/sabbath-rest.html` (**does not exist yet** — no content supplied in this brief; will be a dead link until built) | ⬜ | ⚠️ backlog — flagged below |
-| 1c | "Purpose & Meaning" → `topics/purpose-meaning.html` (this brief) | ⬜ | new page |
+| 1 | Reduce Spiritual card to 3 topics: **Meditation & Prayer**, **Sabbath Rest**, **Purpose & Meaning**; remove Scripture & Health, Prayer & Healing, Worship & Wellness, Spiritual Disciplines | ✅ | `index.html:441-445` (was 5 links, now 3) |
+| 1a | "Meditation & Prayer" → `topics/meditation-prayer.html` (already exists — built under Mental Health; cross-pillar link, matches Jon's "crossover" point) | ✅ | live page |
+| 1b | "Sabbath Rest" → `topics/sabbath-rest.html` (**does not exist yet** — no content supplied in this brief; dead link until built) | 🟡 | ⚠️ backlog — Sanjay chose "leave as dead link for now" (2026-06-18); flagged to Jon |
+| 1c | "Purpose & Meaning" → `topics/purpose-meaning.html` (this brief) | ✅ | new page |
 
 ### B. Purpose & Meaning page content
 
 | # | Deliverable from brief | Status | Notes |
 |---|---|---|---|
-| 2 | ✨ **Biblical framework** intro — purpose/meaning come from God, shape the whole person; every human bears the image of God (*tzelem Elohim*), inherent dignity & direction; meaning discovered by walking with God and aligning life with His design | ⬜ | intro section |
-| 3 | 🌱 **Holistic Health Integration** — alignment with God's design strengthens 4 areas: emotional wellbeing (clarity, direction, resilience) · spiritual vitality (rooted identity, connection) · relational health (compassion, forgiveness, community) · physical health (reduced stress, deeper peace, healthier rhythms) | ⬜ | tips-grid (4 cards) |
-| 4 | Closing line — "purpose is not a single task — it is a whole-life orientation shaped by God's presence and wisdom" | ⬜ | section line |
-| 5 | 🌱 **Applications for Daily Life** — 7 practices, each with its "Application" steps: | ⬜ | tips-grid (7 cards) or guided list |
-| 5a | Daily Scripture Engagement — Torah/Psalms/Proverbs/Jesus' teachings; read a short passage each morning, reflect on one phrase | ⬜ | card |
-| 5b | Practicing Gratitude — write 3 blessings each evening; blessing before meals (cross-link Gratitude Practice) | ⬜ | card |
-| 5c | Sabbath Rhythms — one weekly period for rest/worship/unplugging; share a meal | ⬜ | card |
-| 5d | Acts of Compassion — help someone in need weekly; give time/resources | ⬜ | card |
-| 5e | Prayer and Reflection — begin/end day with a short prayer; use Psalms or the Lord's Prayer (cross-link Meditation & Prayer) | ⬜ | card |
-| 5f | Community Connection — join a study group/place of worship/community; share meals, stories, support | ⬜ | card |
-| 5g | Living with Integrity — align one area of life with God's ways; honesty, humility, compassion | ⬜ | card |
+| 2 | ✨ **Biblical framework** intro — purpose/meaning come from God, shape the whole person; every human bears the image of God (*tzelem Elohim*), inherent dignity & direction; meaning discovered by walking with God and aligning life with His design | ✅ | `topics/purpose-meaning.html:119-125` (Gen 1:27 inline) |
+| 3 | 🌱 **Holistic Health Integration** — alignment with God's design strengthens 4 areas: emotional wellbeing (clarity, direction, resilience) · spiritual vitality (rooted identity, connection) · relational health (compassion, forgiveness, community) · physical health (reduced stress, deeper peace, healthier rhythms) | ✅ | 4 tip-cards, `topics/purpose-meaning.html:132-149` |
+| 4 | Closing line — "purpose is not a single task — it is a whole-life orientation shaped by God's presence and wisdom" | ✅ | `topics/purpose-meaning.html:150` |
+| 5 | 🌱 **Applications for Daily Life** — 7 practices, each with its "Application" steps (7 cards × 2 bullets = 14) | ✅ | tips-grid, `topics/purpose-meaning.html:160-218` |
+| 5a | Daily Scripture Engagement — Torah/Psalms/Proverbs/Jesus' teachings; read a short passage each morning, reflect on one phrase | ✅ | `topics/purpose-meaning.html:161-168` |
+| 5b | Practicing Gratitude — write 3 blessings each evening; blessing before meals (cross-link Gratitude Practice) | ✅ | `:169-176` (links `gratitude-practice.html`) |
+| 5c | Sabbath Rhythms — one weekly period for rest/worship/unplugging; share a meal | ✅ | `:177-184` (links `digital-detox.html` for "unplugging") |
+| 5d | Acts of Compassion — help someone in need weekly; give time/resources | ✅ | `:185-191` |
+| 5e | Prayer and Reflection — begin/end day with a short prayer; use Psalms or the Lord's Prayer (cross-link Meditation & Prayer) | ✅ | `:192-199` (links `meditation-prayer.html`) |
+| 5f | Community Connection — join a study group/place of worship/community; share meals, stories, support | ✅ | `:200-206` |
+| 5g | Living with Integrity — align one area of life with God's ways; honesty, humility, compassion | ✅ | `:207-214` |
 
-### Defaults proposed (will apply on greenlight unless told otherwise)
+### Defaults applied — 🟡 PLEASE CONFIRM with client (Sanjay greenlit build 2026-06-18)
 
-| Decision | Proposed default | Rationale |
+| Decision | Applied default | Rationale |
 |---|---|---|
-| 🟡 **Slug** | `purpose-meaning.html` | matches existing dead link `index.html:446` |
+| 🟡 **Slug** | `purpose-meaning.html` | matched existing dead link in `index.html` |
 | 🟡 **Spiritual sidebar** | the new page's sidebar lists the 3 Spiritual topics (Meditation & Prayer, Sabbath Rest, Purpose & Meaning), Purpose & Meaning active | matches the restructured pillar |
 | 🟡 **Sabbath Rest link** | leave as a dead link to `sabbath-rest.html` for now (no content yet) | not in this brief; known backlog |
 | 🟡 **7 applications layout** | 7 tip-cards in a `.tips-grid`, each with the practice + its application steps | matches Power of Napping / Mindful Eating step patterns |
@@ -54,12 +54,17 @@ This file tracks every brief from Jonathan (the client) and verifies each delive
 | 🟡 **tzelem Elohim** | keep the Hebrew term with its English gloss | client used it deliberately |
 | 🟡 **No video / no journal** | text + cards only | none requested |
 
-### Outstanding questions for client
+### Outstanding questions for client — 📨 SENT 2026-06-18 (Sanjay forwarding)
 
 - ❓ **Sabbath Rest** is one of your 3 Spiritual topics but no page/content exists yet — shall we draft one (it overlaps the existing Sleep & Rest material), or do you have copy to send? Until then its link will 404.
 - ❓ Confirm removing the other 4 Spiritual subjects (Scripture & Health, Prayer & Healing, Worship & Wellness, Spiritual Disciplines).
 - ❓ Confirm/seed **Scripture**: sidebar Jeremiah 29:11 + mid-page Ephesians 2:10.
 - ❓ OK that **Meditation & Prayer** in the Spiritual list points to the existing Mental Health page (one page, two pillars), rather than a separate Spiritual copy?
+
+### Verification performed
+
+- **Local** (`python3 -m http.server 8000`): Playwright DOM check at 1280 × 800 — title == H1 == "Purpose & Meaning", breadcrumb current correct, 3-item Spiritual sidebar (Meditation & Prayer / Sabbath Rest / Purpose & Meaning) with Purpose & Meaning `.active`, 3 H3 sections, 2 tips-grids (4 integration + 7 application = 11 tip-cards), the 7 application cards carry 14 bullet items (2 each), 2 biblical boxes (Jer 29:11 + Eph 2:10), 3 body cross-links (gratitude-practice, digital-detox, meditation-prayer — all live), 4 related-topics, help box. `index.html` Spiritual card confirmed reduced from 5 links to 3. Mobile at 390 × 844 — no horizontal overflow, all 11 tip-cards uniform 351px.
+- **Live:** ⬜ pending push to `main` → re-run DOM checks against Netlify URL.
 
 ---
 
