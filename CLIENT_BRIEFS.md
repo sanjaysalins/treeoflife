@@ -10,29 +10,29 @@ This file tracks every brief from Jonathan (the client) and verifies each delive
 
 **Source:** Jonathan Verrinder, email "Sabbath rest", 13 Jun 2026 7:15 PM
 **Pillar:** Cross-pillar — **Spiritual** (one of Jon's 3 Spiritual topics, per the 6:46 PM restructure) **and** Sleep & Rest (already a planned Sleep topic)
-**Target page:** `topics/sabbath-rest.html` *(new file; already linked as a dead link from **6** places — `index.html:323` (Sleep card) + `:443` (Spiritual card), and the sidebars of `sleep-hygiene.html`, `digital-detox.html`, `power-of-napping.html`, `purpose-meaning.html`; building it makes all 6 resolve)*
-**Implementation commit:** _pending_
+**Target page:** [`topics/sabbath-rest.html`](topics/sabbath-rest.html) *(new file; was linked as a dead link from **6** places — `index.html` Sleep + Spiritual cards, and the sidebars of `sleep-hygiene.html`, `digital-detox.html`, `power-of-napping.html`, `purpose-meaning.html`; building it makes all 6 resolve)*
+**Implementation commit:** `b05c220` (local build verified; awaiting push + live verification)
 
 ### Core sections from brief
 
 | # | Deliverable from brief | Status | Notes |
 |---|---|---|---|
-| 1 | ✨ Intro — "God blessed the seventh day and made it holy" (Genesis 2:3); rest (not work) as the pinnacle of creation; the seventh day as a sacred pause to breathe, restore, realign | ⬜ | intro section |
-| 2 | **1. Whole-Body Restoration** — weekly pause from stress/overwork: lower cortisol, better sleep, improved digestion, hormonal balance | ⬜ | tip card (cross-link physical renewal) |
-| 3 | **2. Mental Clarity & Cognitive Reset** — stop from work/screens/productivity: mental quiet, creativity, reduced overwhelm, improved focus | ⬜ | tip card (cross-link mental clarity) |
-| 4 | **3. Emotional Grounding & Peace** — slowing down, gratitude, joyful rituals, space for reflection | ⬜ | tip card (cross-link emotional grounding) |
-| 5 | **4. Family Connection & Relational Health** — protected togetherness: shared meals, identity-building rituals, reduced conflict, meaningful conversation, weekly reset; Jewish Shabbat family rituals (candles, blessings, meals) | ⬜ | tip card (cross-link Family Health) |
-| 6 | **5. Community Belonging & Social Wellness** — shared meals, community worship, collective singing/celebration, belonging; social connection predicts long-term health | ⬜ | tip card |
-| 7 | **6. Spiritual Alignment & Meaning** — Shabbat as a "sanctuary in time": connection with God, purpose, sacred stillness, *menūḥah* (deep soul-rest) | ⬜ | tip card |
-| 8 | **7. A Weekly Rhythm That Heals** — predictable cycle: stopping → breathing → connecting → restoring; builds resilience for individuals, families, communities | ⬜ | short section / sequence |
-| 9 | **8. Holistic Integration table** — Body (renewal, healing, sleep) · Mind (clarity, calm, focus) · Emotions (joy, grounding) · Spirit (meaning, sacredness) · Family (bonding, identity) · Community (belonging, support); "strengthens every dimension" | ⬜ | Bootstrap `table` (6 rows) |
+| 1 | ✨ Intro — "God blessed the seventh day and made it holy" (Genesis 2:3); rest (not work) as the pinnacle of creation; the seventh day as a sacred pause to breathe, restore, realign | ✅ | `topics/sabbath-rest.html:119-121` |
+| 2 | **1. Whole-Body Restoration** — weekly pause from stress/overwork: lower cortisol, better sleep, improved digestion, hormonal balance | ✅ | tip card w/ cross-link `sleep-hygiene.html`, `:125-128` |
+| 3 | **2. Mental Clarity & Cognitive Reset** — stop from work/screens/productivity: mental quiet, creativity, reduced overwhelm, improved focus | ✅ | tip card w/ cross-link `stress-management.html`, `:129-132` |
+| 4 | **3. Emotional Grounding & Peace** — slowing down, gratitude, joyful rituals, space for reflection | ✅ | tip card w/ cross-link `gratitude-practice.html`, `:133-136` |
+| 5 | **4. Family Connection & Relational Health** — protected togetherness: shared meals, identity-building rituals, reduced conflict, meaningful conversation, weekly reset; Jewish Shabbat family rituals (candles, blessings, meals) | ✅ | tip card w/ cross-link `family-health.html`, `:137-140` |
+| 6 | **5. Community Belonging & Social Wellness** — shared meals, community worship, collective singing/celebration, belonging; social connection predicts long-term health | ✅ | tip card w/ cross-link `#community`, `:141-144` |
+| 7 | **6. Spiritual Alignment & Meaning** — Shabbat as a "sanctuary in time": connection with God, purpose, sacred stillness, *menūḥah* (deep soul-rest) | ✅ | tip card w/ cross-link `purpose-meaning.html`, `:145-148` |
+| 8 | **7. A Weekly Rhythm That Heals** — predictable cycle: stopping → breathing → connecting → restoring; builds resilience for individuals, families, communities | ✅ | `topics/sabbath-rest.html:156-159` |
+| 9 | **8. Holistic Integration table** — Body (renewal, healing, sleep) · Mind (clarity, calm, focus) · Emotions (joy, grounding) · Spirit (meaning, sacredness) · Family (bonding, identity) · Community (belonging, support); "strengthens every dimension" | ✅ | Bootstrap `.table`, 6 rows, `topics/sabbath-rest.html:161-178` |
 
-### Defaults proposed (will apply on greenlight unless told otherwise)
+### Defaults applied — 🟡 PLEASE CONFIRM with client (Sanjay greenlit build + Spiritual home 2026-06-18)
 
-| Decision | Proposed default | Rationale |
+| Decision | Applied default | Rationale |
 |---|---|---|
 | 🟡 **Slug** | `sabbath-rest.html` | matches all 6 existing dead links |
-| 🟡 **Home pillar** | **Spiritual** — breadcrumb Home › Spiritual › Sabbath Rest; sidebar = the 3 Spiritual topics, Sabbath Rest active | Jon's most recent explicit instruction placed it under Spiritual; Sleep & Rest sidebars still link to it cross-pillar (same model as Meditation & Prayer) |
+| 🟡 **Home pillar** | **Spiritual** — breadcrumb Home › Spiritual › Sabbath Rest; sidebar = the 3 Spiritual topics, Sabbath Rest active | Sanjay chose Spiritual (Jon's restructure); Sleep & Rest sidebars still link to it cross-pillar (same model as Meditation & Prayer) |
 | 🟡 **Sections 1-6 layout** | 6 tip-cards in a `.tips-grid`, each with the brief's bullets | matches the Family Health / Purpose & Meaning pattern |
 | 🟡 **Section 7 (rhythm)** | short section with the 4-step cycle highlighted | it's a sequence, not a card set |
 | 🟡 **Section 8 (table)** | Bootstrap `.table` — Dimension / Benefit, 6 rows | the brief literally supplies a table |
@@ -46,6 +46,11 @@ This file tracks every brief from Jonathan (the client) and verifies each delive
 - ❓ **Home pillar:** filed under **Spiritual** (your 3-topic restructure). It's also linked from Sleep & Rest. Happy with Spiritual as its home, or should it sit under Sleep & Rest?
 - ❓ The brief's "Explore:" links (physical renewal, mental clarity, etc.) — cross-linked to our existing pages. OK?
 - ❓ Confirm/seed **Scripture**: sidebar Exodus 20:8-10 + mid-page Mark 2:27.
+
+### Verification performed
+
+- **Local** (`python3 -m http.server 8000`): Playwright DOM check at 1280 × 800 — title == H1 == "Sabbath Rest", breadcrumb current correct, 3-item Spiritual sidebar with Sabbath Rest `.active`, 3 H3 sections, 6 dimension tip-cards, weekly-rhythm section, holistic-integration `.table` with 6 rows (Body/Mind/Emotions/Spirit/Family/Community), 2 biblical boxes (Ex 20:8-10 + Mark 2:27), 6 body cross-links (sleep-hygiene, stress-management, gratitude-practice, family-health, #community, purpose-meaning — all live), 4 related-topics, help box. Mobile at 390 × 844 — no horizontal overflow, 6 tip-cards + table all 351px.
+- **Live:** ⬜ pending push to `main` → re-run DOM checks against Netlify URL.
 
 ---
 
