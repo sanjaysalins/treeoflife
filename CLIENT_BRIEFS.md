@@ -11,7 +11,7 @@ This file tracks every brief from Jonathan (the client) and verifies each delive
 **Source:** Jonathan Verrinder, email "Family health", 13 Jun 2026 6:21 PM
 **Pillar:** Family (this is the **first** Family topic page)
 **Target page:** [`topics/family-health.html`](topics/family-health.html) *(new file — no existing slug; the Family card in `index.html` previously listed 5 dead links)*
-**Implementation commit:** `5532a4c` (local build verified; awaiting push + live verification)
+**Implementation commit:** `5532a4c` (pushed to `main`; live-verified on Netlify 2026-06-18)
 
 > **Explicit client instruction:** "this is to be the only and main topic on family health … so please remove all the other subjects in the family health section." → The 5 current Family subject links (Family Meals, Parenting & Wellness, Marriage & Health, Generational Health, Family Fitness) must be **removed** from `index.html` and replaced with a single link to `family-health.html`. None of those 5 pages exist (all dead links today).
 
@@ -62,7 +62,7 @@ This file tracks every brief from Jonathan (the client) and verifies each delive
 | 🟡 **Yoga / herbal remedies / alternative therapies** | kept verbatim as written | client included them — but flagged below for a faith-based-site check |
 | 🟡 **No video / no journal** | text + cards only | no asset or journal requested |
 
-### Outstanding questions for client
+### Outstanding questions for client — 📨 SENT 2026-06-18 (Sanjay forwarding)
 
 - ❓ Confirm removing the 5 existing Family subjects (Family Meals, Parenting & Wellness, Marriage & Health, Generational Health, Family Fitness) and leaving only Family Health. (Acting on the explicit instruction — flagging for the record.)
 - ❓ Theme 4 lists **yoga, herbal remedies, and "gentle alternative therapies."** On a biblically grounded site some of these can be sensitive — keep all verbatim, soften, or drop any?
@@ -76,7 +76,7 @@ This file tracks every brief from Jonathan (the client) and verifies each delive
 ### Verification performed
 
 - **Local** (`python3 -m http.server 8000`): Playwright DOM check at 1280 × 800 — title == H1 == "Family Health", breadcrumb current correct, single-item Family sidebar with the one link `.active` → `family-health.html`, 3 H3 sections + "The Family in Scripture"/"Holistic Family Health in Scripture" sub-sections, 4 tips-grids (4 + 5 + 6 + 4 = 19 tip-cards), 2 biblical boxes (Deut 6:6-7 + Joshua 24:15), 7 in-card cross-links all resolving to existing topic files, 4 related-topics pills, help box present. `index.html` Family card confirmed reduced from 5 links to 1 (Family Health). Mobile at 390 × 844 — no horizontal overflow, all 19 tip-cards uniform 351px (stacked).
-- **Live:** ⬜ pending push to `main` → re-run DOM checks against Netlify URL.
+- **Live** (https://treeoflife-org.netlify.app/topics/family-health.html): deployed after push. Playwright re-ran all desktop (1280 × 800) + mobile (390 × 844) DOM checks against the live URL — every assertion matched the local run (title/H1/breadcrumb, single-item Family sidebar active, 3 H3 sections, 19 tip-cards across 4 grids, 2 Scripture boxes Deut 6:6-7 + Josh 24:15, 7 in-card cross-links, 4 related-topics, help box; no mobile overflow, 351px uniform widths). Live `index.html` Family card confirmed = 1 link (Family Health). ✅
 
 ---
 
