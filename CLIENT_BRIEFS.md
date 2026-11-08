@@ -807,16 +807,16 @@ Note: Jon wrote "emotional reliance"; assumed Emotional Resilience (the only mat
 
 | # | Deliverable | Status |
 |---|---|---|
-| 1 | New page "Why We Need Each Other" (Social Connections) | ⬜ |
-| 2 | Intro: not made to do life alone; connection beside sleep, movement, nutrition, prayer | ⬜ |
-| 3 | What connection does for the body (about 50% more likely to live longer; isolation raises risk 26-32%) | ⬜ |
-| 4 | Biblical body-of-believers + early Congregation (1 Cor 12; Acts 2:42-47; Heb 10:24-25) | ⬜ |
-| 5 | Wider effects: workplace, school, civic trust, community resilience | ⬜ |
-| 6 | Faith communities and health (service attendance, "deaths of despair") | ⬜ |
-| 7 | Three dimensions: structure, function, quality; quality over numbers; perceived support | ⬜ |
-| 8 | Practical implications (8 points: schedule it, few close ties, local church, hospitality, serve, barriers, illness/later life, hard places) | ⬜ |
-| 9 | Closing: "A Coherent Picture of Wholeness" (faithful presence) | ⬜ |
-| 10 | "Delete the rest of the community section" = remove Support Groups (only Social Connections stays) | ⬜ |
+| 1 | New page "Why We Need Each Other" (Social Connections) | ✅ | `topics/social-connections.html` |
+| 2 | Intro: not made to do life alone; connection beside sleep, movement, nutrition, prayer | ✅ | `topics/social-connections.html` |
+| 3 | What connection does for the body (about 50% more likely to live longer; isolation raises risk 26-32%) | ✅ | `topics/social-connections.html` |
+| 4 | Biblical body-of-believers + early Congregation (1 Cor 12; Acts 2:42-47; Heb 10:24-25) | ✅ | `topics/social-connections.html` |
+| 5 | Wider effects: workplace, school, civic trust, community resilience | ✅ | `topics/social-connections.html` |
+| 6 | Faith communities and health (service attendance, "deaths of despair") | ✅ | `topics/social-connections.html` |
+| 7 | Three dimensions: structure, function, quality; quality over numbers; perceived support | ✅ | `topics/social-connections.html` |
+| 8 | Practical implications (8 points: schedule it, few close ties, local church, hospitality, serve, barriers, illness/later life, hard places) | ✅ | `topics/social-connections.html` |
+| 9 | Closing: "A Coherent Picture of Wholeness" (faithful presence) | ✅ | `topics/social-connections.html` |
+| 10 | "Delete the rest of the community section" = remove Support Groups (only Social Connections stays) | ✅ | `index.html` Community list now Social Connections only |
 
 **Defaults (🟡):**
 - Item 10 reverses Jon's 18 Jun note ("keep Social Connections and Support Groups"). Applying the newer one: Support Groups link removed. It was never built.
