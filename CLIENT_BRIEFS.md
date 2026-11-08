@@ -798,3 +798,32 @@ Note: Jon's 18 Jun reply confirmed Nature Therapy stays in Environment.
 | 3 | Remove "Emotional Reliance" (read as Emotional Resilience) | ✅ | same files + `meditation-prayer.html` related link; 0 references left |
 
 Note: Jon wrote "emotional reliance"; assumed Emotional Resilience (the only matching topic). Mental Health now: Stress Management, Gratitude Practice.
+
+---
+
+## 2026-09-06 (email) — Community / Social Connections — logged, NOT built
+
+**Source:** Jonathan, "Community section", Sun 6 Sep 5:29 PM · **Pillar:** Community · **Page:** `topics/social-connections.html` (**new file**; linked from `index.html:389`, currently a dead link). Template: `topics/nature-therapy.html` (newest) / `clean-living-spaces.html`.
+
+| # | Deliverable | Status |
+|---|---|---|
+| 1 | New page "Why We Need Each Other" (Social Connections) | ⬜ |
+| 2 | Intro: not made to do life alone; connection beside sleep, movement, nutrition, prayer | ⬜ |
+| 3 | What connection does for the body (about 50% more likely to live longer; isolation raises risk 26-32%) | ⬜ |
+| 4 | Biblical body-of-believers + early Congregation (1 Cor 12; Acts 2:42-47; Heb 10:24-25) | ⬜ |
+| 5 | Wider effects: workplace, school, civic trust, community resilience | ⬜ |
+| 6 | Faith communities and health (service attendance, "deaths of despair") | ⬜ |
+| 7 | Three dimensions: structure, function, quality; quality over numbers; perceived support | ⬜ |
+| 8 | Practical implications (8 points: schedule it, few close ties, local church, hospitality, serve, barriers, illness/later life, hard places) | ⬜ |
+| 9 | Closing: "A Coherent Picture of Wholeness" (faithful presence) | ⬜ |
+| 10 | "Delete the rest of the community section" = remove Support Groups (only Social Connections stays) | ⬜ |
+
+**Defaults (🟡):**
+- Item 10 reverses Jon's 18 Jun note ("keep Social Connections and Support Groups"). Applying the newer one: Support Groups link removed. It was never built.
+- "The early Congregation": kept as Jon wrote it (his wording choice).
+- Stats and "deaths of despair" worded as in his text; add short "not medical advice" note.
+- No images or video supplied.
+
+**Questions for client (not blocking):**
+1. Confirm Support Groups is removed (you earlier said keep it).
+2. Source links for the statistics?
