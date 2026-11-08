@@ -801,7 +801,7 @@ Note: Jon wrote "emotional reliance"; assumed Emotional Resilience (the only mat
 
 ---
 
-## 2026-09-06 (email) — Community / Social Connections — logged, NOT built
+## 2026-09-06 (email) — Community / Social Connections — built, pushed
 
 **Source:** Jonathan, "Community section", Sun 6 Sep 5:29 PM · **Pillar:** Community · **Page:** `topics/social-connections.html` (**new file**; linked from `index.html:389`, currently a dead link). Template: `topics/nature-therapy.html` (newest) / `clean-living-spaces.html`.
 
