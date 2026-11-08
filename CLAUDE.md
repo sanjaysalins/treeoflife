@@ -110,6 +110,8 @@ forms/
 
 ## Deployment
 
+- `netlify.toml` forces 404 on `CLAUDE.md` and `CLIENT_BRIEFS.md` so internal files are not public. Never `git add` review pages (e.g. `JON_REPLY_STATUS.html`); they are gitignored.
+
 - Pushing to `main` on GitHub auto-deploys to Netlify: https://treeoflife-org.netlify.app/
 - No build step — Netlify serves the static files directly
 
@@ -137,13 +139,16 @@ No build step required. Either:
 - Use relative paths (`../assets/`) for shared CSS/JS/images
 - Follow the same header/footer structure as the main page
 - Left sidebar contains: category topic list (with current page marked `.active`), Biblical Perspective box, and Help/Contact box
-- **Only 10 topic pages exist so far** — `index.html` links to ~36 topic pages across all 8 pillars, but most are not yet created (links will 404)
+- **18 topic pages exist.** Still unbuilt (links 404 until Jon sends content): `garden-stewardship.html`. Community has one topic only (Social Connections). Updated 2026-09-06.
 - Existing topic pages:
-  - Food & Nutrition: Whole Foods, Biblical Core Eating, Fasting & Detox, Hydration, Mindful Eating (**5 of 5 — pillar complete**)
-  - Exercise: Resistance Training, Walking, Mobility & Flexibility (3 pages)
-  - Sleep & Rest: Sleep Hygiene & Circadian Rhythm, Digital Detox, Power of Napping (3 of 4 planned — Sabbath Rest is linked but not yet created)
-  - Mental Health: Stress Management (1 of 5 — Meditation & Prayer, Emotional Resilience, Gratitude Practice, Cognitive Health not yet created)
-  - Environment: Clean Living Spaces (1 of 5 — Nature Therapy, Toxin-Free Living, Sustainable Health, Gardening not yet created)
+  - Food & Nutrition: Whole Foods, Biblical Core Eating, Fasting & Detox, Hydration, Mindful Eating (5 of 5)
+  - Exercise: Resistance Training, Walking, Mobility & Flexibility (3)
+  - Sleep & Rest: Sleep Hygiene, Digital Detox, Power of Napping (3; Sabbath Rest is under Spiritual only)
+  - Mental Health: Stress Management, Gratitude Practice (2; Meditation & Prayer is under Spiritual only; Emotional Resilience and Cognitive Health were removed at the client request)
+  - Family: Family Health (1)
+  - Community: Social Connections (1; Support Groups, Volunteering, Church & Health Ministry, Mentoring removed)
+  - Environment: Clean Living Spaces, Nature Therapy (2; Garden Stewardship planned; Toxin-Free Living and Sustainable Health removed)
+  - Spiritual: Meditation & Prayer, Sabbath Rest, Purpose & Meaning (3)
 
 ### Navigation
 - Fixed header with scroll state changes (~100px tall)
