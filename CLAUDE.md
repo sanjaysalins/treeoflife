@@ -237,3 +237,29 @@ Workflow applies **from 2026-05-12 onward only**. The 8 pages built before that 
 1. Add a new card section in `index.html` following the existing pattern
 2. Add a corresponding item to the health wheel
 3. Update the JS circular positioning if the item count changes
+
+## Current State & Lessons (updated 2026-09-06, read this first on a new brief)
+
+### Where we are
+- Briefs handled so far: Sabbath Rest, Purpose & Meaning, Jon's 18 Jun reply, 23 Jun reply, Nature Therapy, 5 Jul Gratitude video, 6 Sep Social Connections. All logged in `CLIENT_BRIEFS.md`, pushed, and fetched live.
+- **Never browser-verified yet (needs Sanjay's OK first, or he looks himself):** `topics/nature-therapy.html`, `topics/social-connections.html`, the Gratitude video, and the home page at desktop + 390px. Playwright is not installed and python is not on PATH. Chrome extension was not connected.
+- **Dead link (known):** `topics/garden-stewardship.html` (waiting on Jon's content). Support Groups / Volunteering / Mentoring / Church & Health Ministry / Toxin-Free / Sustainable Health / Cognitive Health / Emotional Resilience were removed at the client's request: do not re-add.
+- **Open questions with Jon:** confirm Support Groups removal; Matthew 6:28 + "not medical advice" notes; source links for stats (Nature, Social); photos/audio for Nature; "emotional reliance" = Emotional Resilience assumption; confirm Purpose & Meaning scripture location answer.
+- **Unvetted:** the Gratitude YouTube video (95-P-sWo4LM) is "5 Minute Morning Gratitude Affirmations"; embedding allowed but content not watched.
+
+### Fast path for a new topic page
+1. Log the brief in `CLIENT_BRIEFS.md` first (deliverables table, defaults 🟡, questions) and commit alone. Ask Sanjay "yes?" before building.
+2. Copy `topics/social-connections.html` (newest) as the template. Only the sidebar block, breadcrumb, `<title>`/meta, biblical box, content between the `col-lg-8` opener and `Related Topics`, and the related links change.
+3. Update the sidebar list in sibling pages and the `index.html` card list. Use "Related Topics" pills, not new sidebar items, for cross-links.
+4. Check script idea: scan every `href` for missing files, unbalanced `div`/`ul`/`section`, duplicate ids.
+5. Commit, `git push origin main`, poll `curl` until the live page shows the change, then give Sanjay the client brief (live links + page-by-page changes + numbered questions).
+
+### Gotchas (learned the hard way)
+- **No python on this machine.** Use `node` for scripted edits. Write the script with the Write tool, not a bash heredoc: heredocs eat backslashes (`\u2026` and regex `\` break).
+- `sed` does not understand `\u2026`; paste the real character (…) or it writes "2026".
+- Working files are CRLF locally, LF in git (`autocrlf`); the "LF will be replaced by CRLF" warning is harmless. Node edits must preserve the file's EOL.
+- **Never `git add -A` a review/status page.** `JON_REPLY_STATUS.html` was published by accident once. Review pages for Sanjay are gitignored. Internal docs are 404'd by `netlify.toml`.
+- Icons: `bi-peace` was replaced at Jon's request; check any new `bi-*` exists in `assets/vendor/bootstrap-icons/bootstrap-icons.css`.
+- Scripture labelled NIV must match NIV wording (e.g. Psalm 19:1 "his hands"); mark excerpts with an ellipsis.
+- Jon's later email overrides his earlier one: flag the reversal in the brief and ask him to confirm.
+- Owner (Sanjay) is dyslexic: short answers, one clear question at the end, review pages as simple HTML, full `file:///` links, never auto-open a browser.
