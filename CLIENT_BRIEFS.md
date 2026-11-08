@@ -737,3 +737,40 @@ Re-verified every `file:line` reference in this file against the current source.
 | 13 | Environment: Nature Therapy, Garden Stewardship, Clean Living Spaces | ✅ | `index.html`, `topics/clean-living-spaces.html` (`gardening` → `garden-stewardship`, page unbuilt) |
 
 Verification: grep only (no browser yet, no push). Pending Sanjay's go-ahead to push + live-verify.
+
+---
+
+## 2026-05-25 (email) — Nature Therapy — logged, NOT built
+
+**Source:** Jonathan, "Natures therapy", Mon 25 May 9:44 AM · **Pillar:** Environment · **Page:** `topics/nature-therapy.html` (**new file**; already linked from `index.html` and the `clean-living-spaces.html` sidebar, so it is a live dead link until built). Template: `topics/clean-living-spaces.html`.
+Note: Jon's 18 Jun reply confirmed Nature Therapy stays in Environment.
+
+| # | Deliverable | Status |
+|---|---|---|
+| 1 | New page `topics/nature-therapy.html` in Environment | ⬜ |
+| 2 | Opening scripture: Genesis 1:31 + Romans 1:20 | ⬜ |
+| 3 | Intro: nature therapy = ecotherapy / forest bathing / Shinrin-Yoku; fits holistic + biblical worldview | ⬜ |
+| 4 | Biophilia Hypothesis section (bio = life, philia = love) | ⬜ |
+| 5 | Research: Stress reduction (cortisol, BP, pulse, parasympathetic; 2017 review) | ⬜ |
+| 6 | Research: Mental health (anxiety, depression, rumination; 90-min walk) | ⬜ |
+| 7 | Research: Immune + physical (phytoncides, NK cells, sleep, heart, inflammation) | ⬜ |
+| 8 | Research: Other (ADHD in children, hospital recovery, 120 min/week) | ⬜ |
+| 9 | Holistic perspective: body, mind, spirit; sensory, phytoncides, less urban stress, presence | ⬜ |
+| 10 | Practical: guided sessions (prayer, slow walk, senses, Psalm 23 / "consider the lilies") | ⬜ |
+| 11 | Practical: discussion prompts (2 questions) | ⬜ |
+| 12 | Practical: daily practice (green-space time, journal with verses, breath prayers) | ⬜ |
+| 13 | Practical: accessibility (local parks, all ages and abilities) | ⬜ |
+| 14 | Reminder: slow walking, deep breathing, all senses | ⬜ |
+| 15 | Closing line ("God who declared creation very good…Shepherd's care") + Psalm 19:1 | ⬜ |
+| 16 | Update sidebar + Related Topics on sibling Environment page(s) | ⬜ |
+
+**Defaults I will apply (🟡, flagged to Jon):**
+- "Consider the lilies" = Matthew 6:28 (not cited in email).
+- Health claims (NK cells, cancer, cortisol) worded as "research suggests", with a short "not medical advice" note.
+- Biophilia sentence is a fragment in the email; I will tidy the grammar only.
+- No images or video supplied; none added.
+
+**Questions for client (not blocking):**
+1. Matthew 6:28 for "consider the lilies" and Psalm 23 as a reference only: OK?
+2. Do you want source links for the research (2017 review, 120 min/week)?
+3. Any photos or a guided audio for this page?
