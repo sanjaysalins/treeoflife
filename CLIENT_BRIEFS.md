@@ -740,29 +740,29 @@ Verification: grep only (no browser yet, no push). Pending Sanjay's go-ahead to 
 
 ---
 
-## 2026-05-25 (email) — Nature Therapy — logged, NOT built
+## 2026-05-25 (email) — Nature Therapy — built, pushed
 
 **Source:** Jonathan, "Natures therapy", Mon 25 May 9:44 AM · **Pillar:** Environment · **Page:** `topics/nature-therapy.html` (**new file**; already linked from `index.html` and the `clean-living-spaces.html` sidebar, so it is a live dead link until built). Template: `topics/clean-living-spaces.html`.
 Note: Jon's 18 Jun reply confirmed Nature Therapy stays in Environment.
 
 | # | Deliverable | Status |
 |---|---|---|
-| 1 | New page `topics/nature-therapy.html` in Environment | ⬜ |
-| 2 | Opening scripture: Genesis 1:31 + Romans 1:20 | ⬜ |
-| 3 | Intro: nature therapy = ecotherapy / forest bathing / Shinrin-Yoku; fits holistic + biblical worldview | ⬜ |
-| 4 | Biophilia Hypothesis section (bio = life, philia = love) | ⬜ |
-| 5 | Research: Stress reduction (cortisol, BP, pulse, parasympathetic; 2017 review) | ⬜ |
-| 6 | Research: Mental health (anxiety, depression, rumination; 90-min walk) | ⬜ |
-| 7 | Research: Immune + physical (phytoncides, NK cells, sleep, heart, inflammation) | ⬜ |
-| 8 | Research: Other (ADHD in children, hospital recovery, 120 min/week) | ⬜ |
-| 9 | Holistic perspective: body, mind, spirit; sensory, phytoncides, less urban stress, presence | ⬜ |
-| 10 | Practical: guided sessions (prayer, slow walk, senses, Psalm 23 / "consider the lilies") | ⬜ |
-| 11 | Practical: discussion prompts (2 questions) | ⬜ |
-| 12 | Practical: daily practice (green-space time, journal with verses, breath prayers) | ⬜ |
-| 13 | Practical: accessibility (local parks, all ages and abilities) | ⬜ |
-| 14 | Reminder: slow walking, deep breathing, all senses | ⬜ |
-| 15 | Closing line ("God who declared creation very good…Shepherd's care") + Psalm 19:1 | ⬜ |
-| 16 | Update sidebar + Related Topics on sibling Environment page(s) | ⬜ |
+| 1 | New page `topics/nature-therapy.html` in Environment | ✅ | `topics/nature-therapy.html` |
+| 2 | Opening scripture: Genesis 1:31 + Romans 1:20 | ✅ | `topics/nature-therapy.html` |
+| 3 | Intro: nature therapy = ecotherapy / forest bathing / Shinrin-Yoku; fits holistic + biblical worldview | ✅ | `topics/nature-therapy.html` |
+| 4 | Biophilia Hypothesis section (bio = life, philia = love) | ✅ | `topics/nature-therapy.html` |
+| 5 | Research: Stress reduction (cortisol, BP, pulse, parasympathetic; 2017 review) | ✅ | `topics/nature-therapy.html` |
+| 6 | Research: Mental health (anxiety, depression, rumination; 90-min walk) | ✅ | `topics/nature-therapy.html` |
+| 7 | Research: Immune + physical (phytoncides, NK cells, sleep, heart, inflammation) | ✅ | `topics/nature-therapy.html` |
+| 8 | Research: Other (ADHD in children, hospital recovery, 120 min/week) | ✅ | `topics/nature-therapy.html` |
+| 9 | Holistic perspective: body, mind, spirit; sensory, phytoncides, less urban stress, presence | ✅ | `topics/nature-therapy.html` |
+| 10 | Practical: guided sessions (prayer, slow walk, senses, Psalm 23 / "consider the lilies") | ✅ | `topics/nature-therapy.html` |
+| 11 | Practical: discussion prompts (2 questions) | ✅ | `topics/nature-therapy.html` |
+| 12 | Practical: daily practice (green-space time, journal with verses, breath prayers) | ✅ | `topics/nature-therapy.html` |
+| 13 | Practical: accessibility (local parks, all ages and abilities) | ✅ | `topics/nature-therapy.html` |
+| 14 | Reminder: slow walking, deep breathing, all senses | ✅ | `topics/nature-therapy.html` |
+| 15 | Closing line ("God who declared creation very good…Shepherd's care") + Psalm 19:1 | ✅ | `topics/nature-therapy.html` |
+| 16 | Update sidebar + Related Topics on sibling Environment page(s) | ✅ | sidebar + Related already pointed here; no sibling edit needed |
 
 **Defaults I will apply (🟡, flagged to Jon):**
 - "Consider the lilies" = Matthew 6:28 (not cited in email).
