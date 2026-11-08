@@ -786,3 +786,15 @@ Note: Jon's 18 Jun reply confirmed Nature Therapy stays in Environment.
 | 3 | Meditation & Prayer out of Mental Health, kept in Spiritual | ✅ | removed from `index.html` collapse-mental, sidebars of `stress-management.html` + `gratitude-practice.html`; `meditation-prayer.html` now "Spiritual Topics" sidebar + Spiritual breadcrumb |
 | 4 | Sabbath Rest out of Sleep & Rest | ✅ | done in 18 Jun update |
 | 5 | "Where is the scripture?" | ❓ answered in reply | Jeremiah 29:11 = sidebar box, Ephesians 2:10 = in page, `topics/purpose-meaning.html` |
+
+---
+
+## 2026-07-05 — Jon: "Gratitude mediation" — built, pushed
+
+| # | Request | Status | Evidence |
+|---|---|---|---|
+| 1 | Gratitude guided meditation = YouTube 95-P-sWo4LM | ✅ | `topics/gratitude-practice.html` ~line 241, 16:9 iframe replaces the "coming soon" placeholder. Video: "I AM BLESSED \| 5 Minute Morning Gratitude Affirmations" (embedding allowed) |
+| 2 | Remove Cognitive Health | ✅ | links removed from `index.html`, `stress-management`, `gratitude-practice` (0 references left) |
+| 3 | Remove "Emotional Reliance" (read as Emotional Resilience) | ✅ | same files + `meditation-prayer.html` related link; 0 references left |
+
+Note: Jon wrote "emotional reliance"; assumed Emotional Resilience (the only matching topic). Mental Health now: Stress Management, Gratitude Practice.
