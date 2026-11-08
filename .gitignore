@@ -15,3 +15,4 @@ temp/
 # Environment files
 .env
 .playwright-mcp
+JON_REPLY_STATUS.html
