@@ -774,3 +774,15 @@ Note: Jon's 18 Jun reply confirmed Nature Therapy stays in Environment.
 1. Matthew 6:28 for "consider the lilies" and Psalm 23 as a reference only: OK?
 2. Do you want source links for the research (2017 review, 120 min/week)?
 3. Any photos or a guided audio for this page?
+
+---
+
+## 2026-06-23 — Jon: "Re: Purpose and meaning" — built, pushed
+
+| # | Request | Status | Evidence |
+|---|---|---|---|
+| 1 | Spiritual section good | ✅ | no change |
+| 2 | Keep Sabbath Rest in Spiritual, clickable | ✅ | `index.html` collapse-spiritual |
+| 3 | Meditation & Prayer out of Mental Health, kept in Spiritual | ✅ | removed from `index.html` collapse-mental, sidebars of `stress-management.html` + `gratitude-practice.html`; `meditation-prayer.html` now "Spiritual Topics" sidebar + Spiritual breadcrumb |
+| 4 | Sabbath Rest out of Sleep & Rest | ✅ | done in 18 Jun update |
+| 5 | "Where is the scripture?" | ❓ answered in reply | Jeremiah 29:11 = sidebar box, Ephesians 2:10 = in page, `topics/purpose-meaning.html` |
