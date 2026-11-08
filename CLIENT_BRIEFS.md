@@ -717,3 +717,23 @@ Re-verified every `file:line` reference in this file against the current source.
 - **Brief coverage:** 2/10 pages logged; 8/10 pre-date the workflow and are out of scope (per Sanjay 2026-05-12)
 - **Open client questions:** 6 across Stress Management (2) and Gratitude (5) — see entries above; client cadence is slow, do not block on them
 
+
+---
+
+## 2026-06-18 — Jon's reply to the 18 Jun round-up (edits applied locally, branch `jon-reply-18jun`, NOT pushed)
+
+| # | Request | Status | Evidence |
+|---|---|---|---|
+| 1 | Gratitude guided meditation link | ❓ waiting on Jon | — |
+| 2 | Remove "Lord Yeshua" | ✅ | `topics/meditation-prayer.html:204` |
+| 3 | Remove "1 hour"; suggest a start-of-day time | ✅ | `topics/meditation-prayer.html:236` |
+| 4-6 | Family: yoga / alt therapies / herbal remedies reworded | ✅ | `topics/family-health.html:192` |
+| 7 | Family Holistic Practices icon changed (bi-tree) | ✅ | `topics/family-health.html:191` |
+| 8 | Purpose prayer icon → 🙏 | ✅ | `topics/purpose-meaning.html:194` |
+| 9 | Christian + Messianic crossover wording | 🟡 reviewed, no change (already cites Torah, Psalms, Jesus) | `topics/purpose-meaning.html:163` |
+| 10 | Sabbath Spiritual Alignment icon (bi-stars) | ✅ | `topics/sabbath-rest.html:146` |
+| 11 | Sabbath removed from Sleep & Rest | ✅ | `index.html`, sidebars in sleep-hygiene / power-of-napping / digital-detox |
+| 12 | Community trimmed to Social Connections + Support Groups | ✅ | `index.html` (pages still unbuilt — Jon writing content) |
+| 13 | Environment: Nature Therapy, Garden Stewardship, Clean Living Spaces | ✅ | `index.html`, `topics/clean-living-spaces.html` (`gardening` → `garden-stewardship`, page unbuilt) |
+
+Verification: grep only (no browser yet, no push). Pending Sanjay's go-ahead to push + live-verify.
